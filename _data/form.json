@@ -1,0 +1,388 @@
+[
+    {
+        "name":"about_you",
+        "label":"About You",
+        "help":"First off let's find out who you are. If completing a form like this is difficult for you to manage please get in touch via applications@thecodersguild.org.uk and we will arrange an apternative way for you to apply.",
+        "fields":{
+           "first_name":{
+              "type":"text",
+              "required":true,
+              "label":"First Name",
+              "class":"first",
+              "help":"",
+              "required_message":"First Name is required."
+           },
+           "last_name":{
+              "type":"text",
+              "required":true,
+              "label":"Last Name",
+              "class":"last",
+              "help":"",
+              "required_message":"Last Name is required."
+           },
+           "date_of_birth":{
+              "type":"date_picker",
+              "required":true,
+              "label":"Date of Birth",
+              "class":"last",
+              "help":"",
+              "required_message":"Date of Birth is required."
+           },
+           "email":{
+              "type":"text",
+              "required":true,
+              "label":"Email",
+              "class":"wide",
+              "help":"don't worry, we're not going to spam you",
+              "required_message":"A valid email address is required."
+           },
+           "phone_number":{
+              "type":"text",
+              "required":true,
+              "label":"Phone Number",
+              "class":"wide",
+              "help":"If we need any clarification with your application it is quicker for us to text you.",
+              "required_message":"Phone Number is required"
+           },
+           "pronouns":{
+              "type":"radio",
+              "required":true,
+              "label":"Pronouns",
+              "class":"first",
+              "help":"Help us to address you properly",
+              "options":[
+                 "he\/him",
+                 "she\/her",
+                 "they\/them",
+                 "other"
+              ],
+              "required_message":"Pronouns is required",
+              "other":"other",
+              "other_text":"Please enter your preferred pronoun"
+           }
+        }
+     },
+     {
+        "name":"application",
+        "label":"Application Questions",
+        "help":"This course is not right for everyone - these questions will help us make a judgement on whether this pilot course is the right learning path for you. If you are unsuccessful we will still be able to point you to other resources and programmes. Please fill out the questions to the best of your ability.",
+        "fields":{
+           "why_did_user_apply":{
+              "type":"textarea",
+              "required":true,
+              "label":"What has made you apply for this course?",
+              "class":"wide",
+              "help":"More than 50 but less than 200 words please :)",
+              "required_message":"Please provide an answer"
+           },
+           "languages":{
+              "type":"checkbox",
+              "required":true,
+              "label":"Have you had any previous experience with any of these languages?",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "HTML",
+                 "CSS",
+                 "JavaScript",
+                 "PHP",
+                 "Python",
+                 "Java",
+                 "c#",
+                 "other"
+              ],
+              "required_message":"Please provide an answer",
+              "other":"other",
+              "other_text":"Provide examples seperated by commas"
+           },
+           "language_examples":{
+              "type":"textarea",
+              "required":false,
+              "label":"Please give us some examples or more info",
+              "class":"wide",
+              "help":"More than 50 but less than 200 words please :) <br \/>\n\t\t\t\t\t\tInclude link(s) to code you have written or a simple overview of something you did on you localhost",
+              "required_message":"Please provide an answer"
+           },
+           "self_taught":{
+              "type":"textarea",
+              "required":true,
+              "label":"Please give us an example of something you have taught yourself",
+              "class":"wide",
+              "help":"More than 50 but less than 200 words please :)",
+              "required_message":"Please provide an answer"
+           }
+        }
+     },
+     {
+        "name":"demographic_data",
+        "label":"Demographic Data",
+        "help":"You don't _have_ to tell us this stuff but the DfE (who are paying for the course) have to ask it. All of this data will be held securely and will only be used for anoymous data processsing and evaluation. Feel free to leave out any quastions you don't feel like answering and please don't let it put you off. For more details please see our privacy policy.",
+        "fields":{
+           "education":{
+              "type":"radio",
+              "required":true,
+              "label":"What's the highest level of Education you have completed?",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "Less than Secondary School",
+                 "Secondary School \/  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)",
+                 "Secondary School \/ GCSE - with grades c and above\/ 4 and above",
+                 "Secondary School \/ College A\/AS levels",
+                 "Some Further Education",
+                 "College Diploma \/ Certificate",
+                 "Undergraduate Degree",
+                 "Masters \/ Graduate Degree",
+                 "Doctorate"
+              ],
+              "required_message":"Please provide an answer"
+           },
+           "dependants":{
+              "type":"radio",
+              "required":true,
+              "label":"Do you have caring responsibilities for children or other adults?",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "Yes caring for children",
+                 "Yes caring for adults",
+                 "No caring responsibilites"
+              ],
+              "required_message":"Please provide an answer"
+           },
+           "disabilities":{
+              "type":"radio",
+              "required":true,
+              "label":"Do you consider yourself to have a disability \/ long term health condition?",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "Yes",
+                 "No",
+                 "Prefer not to say"
+              ],
+              "required_message":"Please provide an answer"
+           },
+           "ethnicity":{
+              "type":"radio",
+              "required":true,
+              "label":"Ethnicity",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "White British",
+                 "All other white",
+                 "Mixed \/ multiple ethnic groups",
+                 "Asian \/ Asian British",
+                 "Black \/ African \/ Caribbean \/ Black British",
+                 "Other ethnic group",
+                 "Prefer not to say"
+              ],
+              "required_message":"Please provide an answer",
+              "other":"Other ethnic group",
+              "other_text":"Please provide us with your ethnicity"
+           },
+           "married":{
+              "type":"radio",
+              "required":true,
+              "label":"Are you Married or In civil partnership",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "Yes",
+                 "No",
+                 "Prefer not to say"
+              ],
+              "required_message":"Please provide an answer"
+           },
+           "pregnant":{
+              "type":"radio",
+              "required":true,
+              "label":"Are you currently pregnant \/ on parental \/ maternity leave:",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "Yes",
+                 "No",
+                 "Prefer not to say"
+              ],
+              "required_message":"Please provide an answer"
+           },
+           "religion":{
+              "type":"radio",
+              "required":true,
+              "label":"Religion \/ belief",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "No religion",
+                 "Christian",
+                 "Buddhist",
+                 "Hindu",
+                 "Jewish",
+                 "Muslim",
+                 "Sikh",
+                 "Any other religion",
+                 "Prefer not to say"
+              ],
+              "required_message":"Please provide an answer",
+              "other":"Any other religion",
+              "other_text":"Please provide your religion"
+           },
+           "sexual_orientation":{
+              "type":"radio",
+              "required":true,
+              "label":"Sexual Orientation?",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "Heterosexual",
+                 "Homosexual",
+                 "Bisexual",
+                 "Prefer not to say",
+                 "Other"
+              ],
+              "required_message":"Please provide an answer",
+              "other":"Other",
+              "other_text":"Please enter your sexual orientation"
+           },
+           "gender":{
+              "type":"radio",
+              "required":true,
+              "label":"Gender?",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "Male",
+                 "Female",
+                 "Other",
+                 "Prefer not to say"
+              ],
+              "required_message":"Please provide an answer",
+              "other":"Other",
+              "other_text":"Please enter your gender"
+           },
+           "gender_reassignment":{
+              "type":"radio",
+              "required":true,
+              "label":"Gender Reassignment?",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "Yes",
+                 "No",
+                 "Prefer not to say"
+              ],
+              "required_message":"Please provide an answer"
+           }
+        }
+     },
+     {
+        "name":"eligibility",
+        "label":"Are you eligible for funding?",
+        "help":"This course is Gov funded and FREE for you - so obviously there is paperwork for us to complete. We need this information to be able to progress your application so please don't leave any out.",
+        "fields":{
+           "employment":{
+              "type":"radio",
+              "required":true,
+              "label":"Employment Status",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "in full-time employment",
+                 "in part-time employment",
+                 "self-employed",
+                 "unemployed for more than 12 months",
+                 "unemployed for less than 12 months",
+                 "in training \/education",
+                 "retired",
+                 "long term sickness",
+                 "parental leave \/ other caring responsibilities"
+              ],
+              "required_message":"Please provide an answer"
+           },
+           "employment_eligability":{
+              "type":"radio",
+              "required":true,
+              "label":"Do you have the right to work in the UK?",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "Yes",
+                 "No",
+                 "Unsure"
+              ],
+              "required_message":"Please provide an answer"
+           },
+           "occupation":{
+              "type":"text",
+              "required":false,
+              "label":"Occupation",
+              "class":"wide",
+              "help":"What is your current job title (if applicable)",
+              "required_message":"Please provide an answer"
+           },
+           "postcode":{
+              "type":"text",
+              "required":true,
+              "label":"Postcode",
+              "class":"wide",
+              "help":"",
+              "required_message":"Please provide a valid postcode"
+           },
+           "national_insurance":{
+              "type":"text",
+              "required":true,
+              "label":"National Insurance Number",
+              "class":"wide",
+              "help":"",
+              "required_message":"Please provide a valid NI number"
+           }
+        }
+     },
+     {
+        "name":"one_more_thing",
+        "label":"Finally",
+        "help":"It really helps us if you let us know what bits of our social media and marketing are working :)",
+        "fields":{
+           "reference":{
+              "type":"radio",
+              "required":true,
+              "label":"Where did you hear about this?",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "Google\/Search",
+                 "Facebook",
+                 "Insta",
+                 "Twitter",
+                 "Advert",
+                 "Tech Talent Charter",
+                 "WYCA",
+                 "Skills Bootcamp Site",
+                 "Other"
+              ]
+           },
+           "terms":{
+              "type":"checkbox",
+              "required":true,
+              "label":"Have you read the terms and conditions?",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "I have read and understand the <a href=\"https:\/\/thecodersguild.org.uk\/pdf\/Website%20Terms%20and%20Conditions%20V1.1.pdf\" target=\"_blank\">terms and conditions<\/a>"
+              ]
+           },
+           "privacy":{
+              "type":"checkbox",
+              "required":true,
+              "label":"Have you read the privacy policy?",
+              "class":"wide",
+              "help":"",
+              "options":[
+                 "I have read and understand the <a href=\"https:\/\/thecodersguild.org.uk\/pdf\/tcg_privacy_policy.pdf\" target=\"_blank\">privacy policy<\/a>"
+              ]
+           }
+        }
+     }
+]

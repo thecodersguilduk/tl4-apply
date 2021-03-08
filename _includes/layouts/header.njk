@@ -1,0 +1,47 @@
+<div class="relative bg-white">
+<div class="border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+    <div class="flex justify-between items-center px-12 lg:px-32 xl:px-32 leading-normal">
+    <div class="lg:w-0 flex-1">
+        <a href="/" class="flex"><img src="/img/The_Coders_Guild_Logo_Blue.svg" class="block md:h-16 h-14"></a>
+    </div>
+    <div class="-mr-2 -my-2 hidden">
+        <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        </button>
+    </div>
+    <div class="hidden lg:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+        <div class="menu-menu-1-container">
+            {# <nav>
+                <ul id="primary-menu" class="menu">
+                {%- for entry in collections.all | eleventyNavigation %}
+                    <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+                    <a class="flex items-center p-4 py-3 block hover:text-blue-600 font-semibold" href="{{ entry.url | url }}">{{ entry.title }}</a>
+                    </li>
+                {%- endfor %}
+                </ul>
+            </nav> #}
+        </div>     
+    </div>
+    <div class="flex lg:hidden items-center justify-end flex-1">
+        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+        <div class="menu-btn"> 
+            <div class="btn-line"></div> 
+            <div class="btn-line"></div> 
+            <div class="btn-line"></div> 
+        </div> 
+        </button>
+    </div>
+    </div>
+    {# <div class="showMobileMenu">
+        <div class="menu-menu-1-container">
+            <ul id="mobile-menu" class="menu">
+            {%- for entry in collections.all | eleventyNavigation %}
+                <li id="nav-menu-item-60" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item"><a class="flex items-center p-4 py-3 block hover:text-blue-600 font-semibold" href="https://skills-bootcamp-jamstack.tcg.camp/my-account/">Login</a></li>
+            {%- endfor %}
+            </ul>
+        </div>
+    </div> #}
+</div>
+</div>

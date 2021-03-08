@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+    {# <link rel="stylesheet" type="text/css" href="/css/tailwind.clrs.css" /> #}
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+    <script src="/js/tcg-validation.js"></script>
+  </head>
+  <body>
+    <header>
+      {% include "layouts/header.njk" %}
+    </header>
+    <main {% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      <div id="page" class="site px-12 lg:px-32 xl:px-32 leading-normal'">
+        
+        {{ content | safe }}
+      </div>
+    </main>
+  
+    <footer class="footer border-t-2 border-grey-100 overflow-hidden">
+      {% include "layouts/footer.njk" %}
+    </footer>
+    <script src="/js/font-awesome.js"></script>
+    <!-- Current page: {{ page.url | url }} -->
+  </body>
+</html>

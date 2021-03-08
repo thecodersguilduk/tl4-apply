@@ -1,0 +1,2286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Blog Name</title>
+    <meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+    
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Your Blog Name">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Your Blog Name">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+    <script src="/js/tcg-validation.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="relative bg-white">
+<div class="border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+    <div class="flex justify-between items-center px-12 lg:px-32 xl:px-32 leading-normal">
+    <div class="lg:w-0 flex-1">
+        <a href="/" class="flex"><img src="/img/The_Coders_Guild_Logo_Blue.svg" class="block md:h-16 h-14"></a>
+    </div>
+    <div class="-mr-2 -my-2 hidden">
+        <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        </button>
+    </div>
+    <div class="hidden lg:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+        <div class="menu-menu-1-container">
+            
+        </div>     
+    </div>
+    <div class="flex lg:hidden items-center justify-end flex-1">
+        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+        <div class="menu-btn"> 
+            <div class="btn-line"></div> 
+            <div class="btn-line"></div> 
+            <div class="btn-line"></div> 
+        </div> 
+        </button>
+    </div>
+    </div>
+    
+</div>
+</div>
+    </header>
+    <main  class="tmpl-home">
+      <div id="page" class="site px-12 lg:px-32 xl:px-32 leading-normal'">
+        
+        <div class="hero relative bg-white">
+  <div class="top-0 w-full h-full">
+    <div class="flex flex-col justify-center items-center py-10 w-full h-full">
+      <h1 class="text-blue-100 text-center mb-0 text-3xl leading-5xl max-w-md md:max-w-full">Bootcamp: Web and App Development with JAMStack</h1>
+    </div>
+  </div>
+</div>
+<article>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum urna vel leo laoreet, rhoncus sagittis metus consectetur. Integer vel porttitor nunc, id scelerisque dolor. Morbi dolor dui, lobortis placerat fermentum sit amet, ornare sed urna. Ut non eros vitae velit rhoncus imperdiet. Vivamus sodales ipsum odio, sed dictum lorem feugiat at. Vivamus sed lorem velit. Vivamus semper pharetra magna, vitae efficitur leo dignissim a. Vestibulum aliquam mattis erat sed pharetra. Praesent vel pellentesque nisi.</p>
+  <p>Curabitur placerat varius eleifend. Praesent in finibus urna. Suspendisse ac ipsum in massa finibus pharetra et non sem. Nunc id vehicula enim. Ut molestie laoreet diam, sit amet luctus arcu vehicula accumsan. Donec id condimentum nunc, nec posuere dolor. Morbi sed nulla hendrerit, efficitur augue ut, faucibus nibh. Sed ultrices pretium dolor, non tempor nibh viverra sed. Nunc finibus tortor a ante egestas, et aliquet dolor ultricies. Cras consectetur magna leo, quis tristique augue volutpat a. Nam euismod tincidunt neque. Sed arcu felis, aliquam sit amet dapibus ut, venenatis non erat.</p>
+</article>
+<form id="applicationForm">
+    <h2 class="my-8">Application Form</h2>
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    
+    
+        <fieldset class="application-form--fieldset  active " data-fieldset="about_you">
+            <div class="card">
+                <div class="lg:flex">
+                    <div class="lg:w-2/6 p-8">
+                        <label for="" class="form-label">About You</label>
+                        
+                            <p class="mt-1 text-sm leading-5 text-gray-500">First off let&#39;s find out who you are. If completing a form like this is difficult for you to manage please get in touch via applications@thecodersguild.org.uk and we will arrange an apternative way for you to apply. </p>
+                        
+                    </div>
+                    <div class="lg:w-4/6 card-dark p-8">
+                        
+                        
+                            <div class="">
+                                <label for="first_name" class="form-label">
+                                    First Name
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        <input id="first_name" name="first_name" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden first_name">First Name is required.</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="">
+                                <label for="last_name" class="form-label">
+                                    Last Name
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        <input id="last_name" name="last_name" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden last_name">Last Name is required.</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="">
+                                <label for="date_of_birth" class="form-label">
+                                    Date of Birth
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        <input id="date_of_birth" name="date_of_birth" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                        <script>
+                                            jQuery( document ).ready(function() {
+                                                jQuery( "#date_of_birth" ).datepicker({
+                                                    changeMonth: true,
+                                                    changeYear: true,
+                                                    yearRange: "-100:+0", // last hundred years
+                                                    defaultDate: '-20y',
+                                                    format: "dd-mm-yyyy",
+                                                    dateFormat: "dd-mm-yyyy",
+                                                    onSelect: function(dateText, inst) {
+                                                        jQuery(this).focus();
+                                                    }
+                                                });
+                                            });
+                                        </script>
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden date_of_birth">Date of Birth is required.</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="">
+                                <label for="email" class="form-label">
+                                    Email
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        <input id="email" name="email" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                    
+                                
+                                    <p class="mt-2 text-sm text-gray-500">don't worry, we're not going to spam you</p>
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden email">A valid email address is required.</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="">
+                                <label for="phone_number" class="form-label">
+                                    Phone Number
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        <input id="phone_number" name="phone_number" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                    
+                                
+                                    <p class="mt-2 text-sm text-gray-500">If we need any clarification with your application it is quicker for us to text you.</p>
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden phone_number">Phone Number is required</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="">
+                                <label for="pronouns" class="form-label">
+                                    Pronouns
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="pronouns-he-him" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pronouns" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="pronouns-he-him" class="font-medium text-gray-700">he/him</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="pronouns-she-her" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pronouns" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="pronouns-she-her" class="font-medium text-gray-700">she/her</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="pronouns-they-them" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pronouns" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="pronouns-they-them" class="font-medium text-gray-700">they/them</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="pronouns-other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pronouns" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="pronouns-other" class="font-medium text-gray-700">other</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                            <div class="other other__pronouns">
+                                                <p class="m-2 text-sm text-gray-500">Please enter your preferred pronoun</p>
+                                                <input id="pronouns_option_selected" name="pronouns_option_selected" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                            </div>
+                                            <script>
+                                                var fieldIDs = "#pronouns-he-him,#pronouns-she-her,#pronouns-they-them,#pronouns-other";
+                                                jQuery(document).on("click",fieldIDs, function(event) {
+                                                    var currentID = event.target.id;
+                                                    var optionContainer = jQuery('.other__pronouns');
+                                                    if(currentID == 'pronouns-other'){
+                                                        optionContainer.show();
+                                                    } else {
+                                                        optionContainer.hide();
+                                                    }
+                                                });
+                                            </script>
+                                        
+                                    
+                                
+                                    <p class="mt-2 text-sm text-gray-500">Help us to address you properly</p>
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden pronouns">Pronouns is required</div>
+                                
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                    
+                    
+                        <button data-fieldsetcounter="0" class="validateFormStepNext btn btn-secondary">Next</button>
+                    
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </fieldset>
+        
+    
+        <fieldset class="application-form--fieldset " data-fieldset="application">
+            <div class="card">
+                <div class="lg:flex">
+                    <div class="lg:w-2/6 p-8">
+                        <label for="" class="form-label">Application Questions</label>
+                        
+                            <p class="mt-1 text-sm leading-5 text-gray-500">This course is not right for everyone - these questions will help us make a judgement on whether this pilot course is the right learning path for you. If you are unsuccessful we will still be able to point you to other resources and programmes. Please fill out the questions to the best of your ability. </p>
+                        
+                    </div>
+                    <div class="lg:w-4/6 card-dark p-8">
+                        
+                        
+                            <div class="mt-8">
+                                <label for="why_did_user_apply" class="form-label">
+                                    What has made you apply for this course?
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        <textarea id="why_did_user_apply" name="why_did_user_apply" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
+                                    
+                                
+                                    <p class="mt-2 text-sm text-gray-500">More than 50 but less than 200 words please :)</p>
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden why_did_user_apply">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="languages" class="form-label">
+                                    Have you had any previous experience with any of these languages?
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="languages-HTML" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="languages-HTML" class="font-medium text-gray-700">HTML</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="languages-CSS" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="languages-CSS" class="font-medium text-gray-700">CSS</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="languages-JavaScript" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="languages-JavaScript" class="font-medium text-gray-700">JavaScript</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="languages-PHP" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="languages-PHP" class="font-medium text-gray-700">PHP</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="languages-Python" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="languages-Python" class="font-medium text-gray-700">Python</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="languages-Java" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="languages-Java" class="font-medium text-gray-700">Java</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="languages-c" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="languages-c" class="font-medium text-gray-700">c#</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="languages-other" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="languages-other" class="font-medium text-gray-700">other</label>
+                                                    
+                                                </div>
+                                            </div>
+                                         
+                                        
+                                            <div class="other other__languages">
+                                                <p class="m-2 text-sm text-gray-500">Provide examples seperated by commas</p>
+                                                <input id="languages_option_selected" name="languages_option_selected" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                            </div>
+                                            <script>
+                                                var fieldIDs = "#languages-HTML,#languages-CSS,#languages-JavaScript,#languages-PHP,#languages-Python,#languages-Java,#languages-c,#languages-other";
+                                                jQuery(document).on("click",fieldIDs, function(event) {
+                                                    var currentID = event.target.id;
+                                                    var optionContainer = jQuery('.other__languages');
+                                                    if(currentID == 'languages-other'){
+                                                        optionContainer.show();
+                                                    } else {
+                                                        optionContainer.hide();
+                                                    }
+                                                });
+                                            </script>
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden languages">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="language_examples" class="form-label">
+                                    Please give us some examples or more info
+                                    
+                                </label>
+                                
+                                        <textarea id="language_examples" name="language_examples" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
+                                    
+                                
+                                    <p class="mt-2 text-sm text-gray-500">More than 50 but less than 200 words please :) <br />
+						Include link(s) to code you have written or a simple overview of something you did on you localhost</p>
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden language_examples">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="self_taught" class="form-label">
+                                    Please give us an example of something you have taught yourself
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        <textarea id="self_taught" name="self_taught" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
+                                    
+                                
+                                    <p class="mt-2 text-sm text-gray-500">More than 50 but less than 200 words please :)</p>
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden self_taught">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                    
+                        <button data-fieldsetcounter="1" class="validateFormStepPrev btn btn-secondary">Prev</button>
+                    
+                    
+                        <button data-fieldsetcounter="1" class="validateFormStepNext btn btn-secondary">Next</button>
+                    
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </fieldset>
+        
+    
+        <fieldset class="application-form--fieldset " data-fieldset="demographic_data">
+            <div class="card">
+                <div class="lg:flex">
+                    <div class="lg:w-2/6 p-8">
+                        <label for="" class="form-label">Demographic Data</label>
+                        
+                            <p class="mt-1 text-sm leading-5 text-gray-500">You don&#39;t _have_ to tell us this stuff but the DfE (who are paying for the course) have to ask it. All of this data will be held securely and will only be used for anoymous data processsing and evaluation. Feel free to leave out any quastions you don&#39;t feel like answering and please don&#39;t let it put you off. For more details please see our privacy policy. </p>
+                        
+                    </div>
+                    <div class="lg:w-4/6 card-dark p-8">
+                        
+                        
+                            <div class="mt-8">
+                                <label for="education" class="form-label">
+                                    What&#39;s the highest level of Education you have completed?
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="education-Less-than-Secondary-School" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="education-Less-than-Secondary-School" class="font-medium text-gray-700">Less than Secondary School</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="education-Secondary-School----GCSE---with-grades-3,-2,-1-or-grades-D,-E,-F,-G-(or-similar)" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="education-Secondary-School----GCSE---with-grades-3,-2,-1-or-grades-D,-E,-F,-G-(or-similar)" class="font-medium text-gray-700">Secondary School /  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="education-Secondary-School---GCSE---with-grades-c-and-above--4-and-above" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="education-Secondary-School---GCSE---with-grades-c-and-above--4-and-above" class="font-medium text-gray-700">Secondary School / GCSE - with grades c and above/ 4 and above</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="education-Secondary-School---College-A-AS-levels" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="education-Secondary-School---College-A-AS-levels" class="font-medium text-gray-700">Secondary School / College A/AS levels</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="education-Some-Further-Education" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="education-Some-Further-Education" class="font-medium text-gray-700">Some Further Education</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="education-College-Diploma---Certificate" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="education-College-Diploma---Certificate" class="font-medium text-gray-700">College Diploma / Certificate</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="education-Undergraduate-Degree" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="education-Undergraduate-Degree" class="font-medium text-gray-700">Undergraduate Degree</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="education-Masters---Graduate-Degree" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="education-Masters---Graduate-Degree" class="font-medium text-gray-700">Masters / Graduate Degree</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="education-Doctorate" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="education-Doctorate" class="font-medium text-gray-700">Doctorate</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden education">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="dependants" class="form-label">
+                                    Do you have caring responsibilities for children or other adults?
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="dependants-Yes-caring-for-children" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="dependants" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="dependants-Yes-caring-for-children" class="font-medium text-gray-700">Yes caring for children</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="dependants-Yes-caring-for-adults" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="dependants" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="dependants-Yes-caring-for-adults" class="font-medium text-gray-700">Yes caring for adults</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="dependants-No-caring-responsibilites" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="dependants" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="dependants-No-caring-responsibilites" class="font-medium text-gray-700">No caring responsibilites</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden dependants">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="disabilities" class="form-label">
+                                    Do you consider yourself to have a disability / long term health condition?
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="disabilities-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="disabilities" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="disabilities-Yes" class="font-medium text-gray-700">Yes</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="disabilities-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="disabilities" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="disabilities-No" class="font-medium text-gray-700">No</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="disabilities-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="disabilities" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="disabilities-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden disabilities">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="ethnicity" class="form-label">
+                                    Ethnicity
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="ethnicity-White-British" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="ethnicity-White-British" class="font-medium text-gray-700">White British</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="ethnicity-All-other-white" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="ethnicity-All-other-white" class="font-medium text-gray-700">All other white</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="ethnicity-Mixed---multiple-ethnic-groups" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="ethnicity-Mixed---multiple-ethnic-groups" class="font-medium text-gray-700">Mixed / multiple ethnic groups</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="ethnicity-Asian---Asian-British" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="ethnicity-Asian---Asian-British" class="font-medium text-gray-700">Asian / Asian British</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="ethnicity-Black---African---Caribbean---Black-British" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="ethnicity-Black---African---Caribbean---Black-British" class="font-medium text-gray-700">Black / African / Caribbean / Black British</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="ethnicity-Other-ethnic-group" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="ethnicity-Other-ethnic-group" class="font-medium text-gray-700">Other ethnic group</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="ethnicity-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="ethnicity-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                            <div class="other other__ethnicity">
+                                                <p class="m-2 text-sm text-gray-500">Please provide us with your ethnicity</p>
+                                                <input id="ethnicity_option_selected" name="ethnicity_option_selected" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                            </div>
+                                            <script>
+                                                var fieldIDs = "#ethnicity-White-British,#ethnicity-All-other-white,#ethnicity-Mixed---multiple-ethnic-groups,#ethnicity-Asian---Asian-British,#ethnicity-Black---African---Caribbean---Black-British,#ethnicity-Other-ethnic-group,#ethnicity-Prefer-not-to-say";
+                                                jQuery(document).on("click",fieldIDs, function(event) {
+                                                    var currentID = event.target.id;
+                                                    var optionContainer = jQuery('.other__ethnicity');
+                                                    if(currentID == 'ethnicity-Other-ethnic-group'){
+                                                        optionContainer.show();
+                                                    } else {
+                                                        optionContainer.hide();
+                                                    }
+                                                });
+                                            </script>
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden ethnicity">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="married" class="form-label">
+                                    Are you Married or In civil partnership
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="married-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="married" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="married-Yes" class="font-medium text-gray-700">Yes</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="married-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="married" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="married-No" class="font-medium text-gray-700">No</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="married-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="married" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="married-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden married">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="pregnant" class="form-label">
+                                    Are you currently pregnant / on parental / maternity leave:
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="pregnant-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pregnant" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="pregnant-Yes" class="font-medium text-gray-700">Yes</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="pregnant-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pregnant" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="pregnant-No" class="font-medium text-gray-700">No</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="pregnant-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pregnant" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="pregnant-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden pregnant">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="religion" class="form-label">
+                                    Religion / belief
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="religion-No-religion" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="religion-No-religion" class="font-medium text-gray-700">No religion</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="religion-Christian" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="religion-Christian" class="font-medium text-gray-700">Christian</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="religion-Buddhist" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="religion-Buddhist" class="font-medium text-gray-700">Buddhist</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="religion-Hindu" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="religion-Hindu" class="font-medium text-gray-700">Hindu</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="religion-Jewish" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="religion-Jewish" class="font-medium text-gray-700">Jewish</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="religion-Muslim" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="religion-Muslim" class="font-medium text-gray-700">Muslim</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="religion-Sikh" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="religion-Sikh" class="font-medium text-gray-700">Sikh</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="religion-Any-other-religion" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="religion-Any-other-religion" class="font-medium text-gray-700">Any other religion</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="religion-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="religion-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                            <div class="other other__religion">
+                                                <p class="m-2 text-sm text-gray-500">Please provide your religion</p>
+                                                <input id="religion_option_selected" name="religion_option_selected" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                            </div>
+                                            <script>
+                                                var fieldIDs = "#religion-No-religion,#religion-Christian,#religion-Buddhist,#religion-Hindu,#religion-Jewish,#religion-Muslim,#religion-Sikh,#religion-Any-other-religion,#religion-Prefer-not-to-say";
+                                                jQuery(document).on("click",fieldIDs, function(event) {
+                                                    var currentID = event.target.id;
+                                                    var optionContainer = jQuery('.other__religion');
+                                                    if(currentID == 'religion-Any-other-religion'){
+                                                        optionContainer.show();
+                                                    } else {
+                                                        optionContainer.hide();
+                                                    }
+                                                });
+                                            </script>
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden religion">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="sexual_orientation" class="form-label">
+                                    Sexual Orientation?
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="sexual_orientation-Heterosexual" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="sexual_orientation-Heterosexual" class="font-medium text-gray-700">Heterosexual</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="sexual_orientation-Homosexual" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="sexual_orientation-Homosexual" class="font-medium text-gray-700">Homosexual</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="sexual_orientation-Bisexual" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="sexual_orientation-Bisexual" class="font-medium text-gray-700">Bisexual</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="sexual_orientation-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="sexual_orientation-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="sexual_orientation-Other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="sexual_orientation-Other" class="font-medium text-gray-700">Other</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                            <div class="other other__sexual_orientation">
+                                                <p class="m-2 text-sm text-gray-500">Please enter your sexual orientation</p>
+                                                <input id="sexual_orientation_option_selected" name="sexual_orientation_option_selected" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                            </div>
+                                            <script>
+                                                var fieldIDs = "#sexual_orientation-Heterosexual,#sexual_orientation-Homosexual,#sexual_orientation-Bisexual,#sexual_orientation-Prefer-not-to-say,#sexual_orientation-Other";
+                                                jQuery(document).on("click",fieldIDs, function(event) {
+                                                    var currentID = event.target.id;
+                                                    var optionContainer = jQuery('.other__sexual_orientation');
+                                                    if(currentID == 'sexual_orientation-Other'){
+                                                        optionContainer.show();
+                                                    } else {
+                                                        optionContainer.hide();
+                                                    }
+                                                });
+                                            </script>
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden sexual_orientation">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="gender" class="form-label">
+                                    Gender?
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="gender-Male" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="gender-Male" class="font-medium text-gray-700">Male</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="gender-Female" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="gender-Female" class="font-medium text-gray-700">Female</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="gender-Other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="gender-Other" class="font-medium text-gray-700">Other</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="gender-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="gender-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                            <div class="other other__gender">
+                                                <p class="m-2 text-sm text-gray-500">Please enter your gender</p>
+                                                <input id="gender_option_selected" name="gender_option_selected" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                            </div>
+                                            <script>
+                                                var fieldIDs = "#gender-Male,#gender-Female,#gender-Other,#gender-Prefer-not-to-say";
+                                                jQuery(document).on("click",fieldIDs, function(event) {
+                                                    var currentID = event.target.id;
+                                                    var optionContainer = jQuery('.other__gender');
+                                                    if(currentID == 'gender-Other'){
+                                                        optionContainer.show();
+                                                    } else {
+                                                        optionContainer.hide();
+                                                    }
+                                                });
+                                            </script>
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden gender">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="gender_reassignment" class="form-label">
+                                    Gender Reassignment?
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="gender_reassignment-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender_reassignment" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="gender_reassignment-Yes" class="font-medium text-gray-700">Yes</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="gender_reassignment-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender_reassignment" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="gender_reassignment-No" class="font-medium text-gray-700">No</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="gender_reassignment-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender_reassignment" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="gender_reassignment-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden gender_reassignment">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                    
+                        <button data-fieldsetcounter="2" class="validateFormStepPrev btn btn-secondary">Prev</button>
+                    
+                    
+                        <button data-fieldsetcounter="2" class="validateFormStepNext btn btn-secondary">Next</button>
+                    
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </fieldset>
+        
+    
+        <fieldset class="application-form--fieldset " data-fieldset="eligibility">
+            <div class="card">
+                <div class="lg:flex">
+                    <div class="lg:w-2/6 p-8">
+                        <label for="" class="form-label">Are you eligible for funding?</label>
+                        
+                            <p class="mt-1 text-sm leading-5 text-gray-500">This course is Gov funded and FREE for you - so obviously there is paperwork for us to complete. We need this information to be able to progress your application so please don&#39;t leave any out. </p>
+                        
+                    </div>
+                    <div class="lg:w-4/6 card-dark p-8">
+                        
+                        
+                            <div class="mt-8">
+                                <label for="employment" class="form-label">
+                                    Employment Status
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="employment-in-full-time-employment" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="employment-in-full-time-employment" class="font-medium text-gray-700">in full-time employment</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="employment-in-part-time-employment" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="employment-in-part-time-employment" class="font-medium text-gray-700">in part-time employment</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="employment-self-employed" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="employment-self-employed" class="font-medium text-gray-700">self-employed</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="employment-unemployed-for-more-than-12-months" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="employment-unemployed-for-more-than-12-months" class="font-medium text-gray-700">unemployed for more than 12 months</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="employment-unemployed-for-less-than-12-months" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="employment-unemployed-for-less-than-12-months" class="font-medium text-gray-700">unemployed for less than 12 months</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="employment-in-training--education" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="employment-in-training--education" class="font-medium text-gray-700">in training /education</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="employment-retired" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="employment-retired" class="font-medium text-gray-700">retired</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="employment-long-term-sickness" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="employment-long-term-sickness" class="font-medium text-gray-700">long term sickness</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="employment-parental-leave---other-caring-responsibilities" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="employment-parental-leave---other-caring-responsibilities" class="font-medium text-gray-700">parental leave / other caring responsibilities</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden employment">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="employment_eligability" class="form-label">
+                                    Do you have the right to work in the UK?
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="employment_eligability-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment_eligability" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="employment_eligability-Yes" class="font-medium text-gray-700">Yes</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="employment_eligability-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment_eligability" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="employment_eligability-No" class="font-medium text-gray-700">No</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="employment_eligability-Unsure" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment_eligability" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="employment_eligability-Unsure" class="font-medium text-gray-700">Unsure</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden employment_eligability">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="occupation" class="form-label">
+                                    Occupation
+                                    
+                                </label>
+                                
+                                        <input id="occupation" name="occupation" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                    
+                                
+                                    <p class="mt-2 text-sm text-gray-500">What is your current job title (if applicable)</p>
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden occupation">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="postcode" class="form-label">
+                                    Postcode
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        <input id="postcode" name="postcode" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden postcode">Please provide a valid postcode</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="national_insurance" class="form-label">
+                                    National Insurance Number
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        <input id="national_insurance" name="national_insurance" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                    
+                                
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden national_insurance">Please provide a valid NI number</div>
+                                
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                    
+                        <button data-fieldsetcounter="3" class="validateFormStepPrev btn btn-secondary">Prev</button>
+                    
+                    
+                        <button data-fieldsetcounter="3" class="validateFormStepNext btn btn-secondary">Next</button>
+                    
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </fieldset>
+        
+    
+        <fieldset class="application-form--fieldset " data-fieldset="one_more_thing">
+            <div class="card">
+                <div class="lg:flex">
+                    <div class="lg:w-2/6 p-8">
+                        <label for="" class="form-label">Finally</label>
+                        
+                            <p class="mt-1 text-sm leading-5 text-gray-500">It really helps us if you let us know what bits of our social media and marketing are working :) </p>
+                        
+                    </div>
+                    <div class="lg:w-4/6 card-dark p-8">
+                        
+                        
+                            <div class="mt-8">
+                                <label for="reference" class="form-label">
+                                    Where did you hear about this?
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="reference-Google-Search" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="reference-Google-Search" class="font-medium text-gray-700">Google/Search</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="reference-Facebook" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="reference-Facebook" class="font-medium text-gray-700">Facebook</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="reference-Insta" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="reference-Insta" class="font-medium text-gray-700">Insta</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="reference-Twitter" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="reference-Twitter" class="font-medium text-gray-700">Twitter</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="reference-Advert" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="reference-Advert" class="font-medium text-gray-700">Advert</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="reference-Tech-Talent-Charter" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="reference-Tech-Talent-Charter" class="font-medium text-gray-700">Tech Talent Charter</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="reference-WYCA" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="reference-WYCA" class="font-medium text-gray-700">WYCA</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="reference-Skills-Bootcamp-Site" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="reference-Skills-Bootcamp-Site" class="font-medium text-gray-700">Skills Bootcamp Site</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="reference-Other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="reference-Other" class="font-medium text-gray-700">Other</label>
+                                                </div>
+                                            </div>
+                                          
+                                        
+                                    
+                                
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="terms" class="form-label">
+                                    Have you read the terms and conditions?
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="terms" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="terms" />
+                                                        
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="terms" class="font-medium text-gray-700">I have read and understand the <a href="https://thecodersguild.org.uk/pdf/Website%20Terms%20and%20Conditions%20V1.1.pdf" target="_blank">terms and conditions</a></label>
+                                                        
+                                                </div>
+                                            </div>
+                                         
+                                        
+                                    
+                                
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="privacy" class="form-label">
+                                    Have you read the privacy policy?
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="privacy" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="privacy" />
+                                                        
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="privacy" class="font-medium text-gray-700">I have read and understand the <a href="https://thecodersguild.org.uk/pdf/tcg_privacy_policy.pdf" target="_blank">privacy policy</a></label>
+                                                        
+                                                </div>
+                                            </div>
+                                         
+                                        
+                                    
+                                
+                                
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                    
+                        <button data-fieldsetcounter="4" class="validateFormStepPrev btn btn-secondary">Prev</button>
+                    
+                    
+                        <button data-fieldsetcounter="4" type="submit" class="btn btn-primary submitApplication">Submit Application</button>
+                    
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </fieldset>
+        
+    
+</form>
+<script>
+    var objInputs = [{"name":"about_you","label":"About You","help":"First off let's find out who you are. If completing a form like this is difficult for you to manage please get in touch via applications@thecodersguild.org.uk and we will arrange an apternative way for you to apply.","fields":{"first_name":{"type":"text","required":true,"label":"First Name","class":"first","help":"","required_message":"First Name is required."},"last_name":{"type":"text","required":true,"label":"Last Name","class":"last","help":"","required_message":"Last Name is required."},"date_of_birth":{"type":"date_picker","required":true,"label":"Date of Birth","class":"last","help":"","required_message":"Date of Birth is required."},"email":{"type":"text","required":true,"label":"Email","class":"wide","help":"don't worry, we're not going to spam you","required_message":"A valid email address is required."},"phone_number":{"type":"text","required":true,"label":"Phone Number","class":"wide","help":"If we need any clarification with your application it is quicker for us to text you.","required_message":"Phone Number is required"},"pronouns":{"type":"radio","required":true,"label":"Pronouns","class":"first","help":"Help us to address you properly","options":["he/him","she/her","they/them","other"],"required_message":"Pronouns is required","other":"other","other_text":"Please enter your preferred pronoun"}}},{"name":"application","label":"Application Questions","help":"This course is not right for everyone - these questions will help us make a judgement on whether this pilot course is the right learning path for you. If you are unsuccessful we will still be able to point you to other resources and programmes. Please fill out the questions to the best of your ability.","fields":{"why_did_user_apply":{"type":"textarea","required":true,"label":"What has made you apply for this course?","class":"wide","help":"More than 50 but less than 200 words please :)","required_message":"Please provide an answer"},"languages":{"type":"checkbox","required":true,"label":"Have you had any previous experience with any of these languages?","class":"wide","help":"","options":["HTML","CSS","JavaScript","PHP","Python","Java","c#","other"],"required_message":"Please provide an answer","other":"other","other_text":"Provide examples seperated by commas"},"language_examples":{"type":"textarea","required":false,"label":"Please give us some examples or more info","class":"wide","help":"More than 50 but less than 200 words please :) <br />\n\t\t\t\t\t\tInclude link(s) to code you have written or a simple overview of something you did on you localhost","required_message":"Please provide an answer"},"self_taught":{"type":"textarea","required":true,"label":"Please give us an example of something you have taught yourself","class":"wide","help":"More than 50 but less than 200 words please :)","required_message":"Please provide an answer"}}},{"name":"demographic_data","label":"Demographic Data","help":"You don't _have_ to tell us this stuff but the DfE (who are paying for the course) have to ask it. All of this data will be held securely and will only be used for anoymous data processsing and evaluation. Feel free to leave out any quastions you don't feel like answering and please don't let it put you off. For more details please see our privacy policy.","fields":{"education":{"type":"radio","required":true,"label":"What's the highest level of Education you have completed?","class":"wide","help":"","options":["Less than Secondary School","Secondary School /  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)","Secondary School / GCSE - with grades c and above/ 4 and above","Secondary School / College A/AS levels","Some Further Education","College Diploma / Certificate","Undergraduate Degree","Masters / Graduate Degree","Doctorate"],"required_message":"Please provide an answer"},"dependants":{"type":"radio","required":true,"label":"Do you have caring responsibilities for children or other adults?","class":"wide","help":"","options":["Yes caring for children","Yes caring for adults","No caring responsibilites"],"required_message":"Please provide an answer"},"disabilities":{"type":"radio","required":true,"label":"Do you consider yourself to have a disability / long term health condition?","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"ethnicity":{"type":"radio","required":true,"label":"Ethnicity","class":"wide","help":"","options":["White British","All other white","Mixed / multiple ethnic groups","Asian / Asian British","Black / African / Caribbean / Black British","Other ethnic group","Prefer not to say"],"required_message":"Please provide an answer","other":"Other ethnic group","other_text":"Please provide us with your ethnicity"},"married":{"type":"radio","required":true,"label":"Are you Married or In civil partnership","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"pregnant":{"type":"radio","required":true,"label":"Are you currently pregnant / on parental / maternity leave:","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"religion":{"type":"radio","required":true,"label":"Religion / belief","class":"wide","help":"","options":["No religion","Christian","Buddhist","Hindu","Jewish","Muslim","Sikh","Any other religion","Prefer not to say"],"required_message":"Please provide an answer","other":"Any other religion","other_text":"Please provide your religion"},"sexual_orientation":{"type":"radio","required":true,"label":"Sexual Orientation?","class":"wide","help":"","options":["Heterosexual","Homosexual","Bisexual","Prefer not to say","Other"],"required_message":"Please provide an answer","other":"Other","other_text":"Please enter your sexual orientation"},"gender":{"type":"radio","required":true,"label":"Gender?","class":"wide","help":"","options":["Male","Female","Other","Prefer not to say"],"required_message":"Please provide an answer","other":"Other","other_text":"Please enter your gender"},"gender_reassignment":{"type":"radio","required":true,"label":"Gender Reassignment?","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"}}},{"name":"eligibility","label":"Are you eligible for funding?","help":"This course is Gov funded and FREE for you - so obviously there is paperwork for us to complete. We need this information to be able to progress your application so please don't leave any out.","fields":{"employment":{"type":"radio","required":true,"label":"Employment Status","class":"wide","help":"","options":["in full-time employment","in part-time employment","self-employed","unemployed for more than 12 months","unemployed for less than 12 months","in training /education","retired","long term sickness","parental leave / other caring responsibilities"],"required_message":"Please provide an answer"},"employment_eligability":{"type":"radio","required":true,"label":"Do you have the right to work in the UK?","class":"wide","help":"","options":["Yes","No","Unsure"],"required_message":"Please provide an answer"},"occupation":{"type":"text","required":false,"label":"Occupation","class":"wide","help":"What is your current job title (if applicable)","required_message":"Please provide an answer"},"postcode":{"type":"text","required":true,"label":"Postcode","class":"wide","help":"","required_message":"Please provide a valid postcode"},"national_insurance":{"type":"text","required":true,"label":"National Insurance Number","class":"wide","help":"","required_message":"Please provide a valid NI number"}}},{"name":"one_more_thing","label":"Finally","help":"It really helps us if you let us know what bits of our social media and marketing are working :)","fields":{"reference":{"type":"radio","required":true,"label":"Where did you hear about this?","class":"wide","help":"","options":["Google/Search","Facebook","Insta","Twitter","Advert","Tech Talent Charter","WYCA","Skills Bootcamp Site","Other"]},"terms":{"type":"checkbox","required":true,"label":"Have you read the terms and conditions?","class":"wide","help":"","options":["I have read and understand the <a href=\"https://thecodersguild.org.uk/pdf/Website%20Terms%20and%20Conditions%20V1.1.pdf\" target=\"_blank\">terms and conditions</a>"]},"privacy":{"type":"checkbox","required":true,"label":"Have you read the privacy policy?","class":"wide","help":"","options":["I have read and understand the <a href=\"https://thecodersguild.org.uk/pdf/tcg_privacy_policy.pdf\" target=\"_blank\">privacy policy</a>"]}}}]
+</script>
+
+
+      </div>
+    </main>
+  
+    <footer class="footer border-t-2 border-grey-100 overflow-hidden">
+      <div class="md:pt-12 pt-6 md:pb-14 pb-8 inner sm:px-4 lg:px-8">
+<div class="flex justify-between flex-wrap sm:-mx-3 lg:mx-auto">
+    <div class="lg:w-auto mb-6 sm:mb-12 lg:mb-0 w-full lg:w-1/4 sm:w-1/2 sm:px-6 lg:px-0">
+        <div class="md:mb-5 mb-6">
+            <img src="/img/The_Coders_Guild_Logo_Blue.svg" class="block md:h-16 h-14">
+        </div>
+        <p class="text-md md:text-sm leading-lg md:leading-sm">Industry led, community driven.</p>
+    </div>
+    <div class="lg:pt-10 mb-8 sm:mb-12 lg:mb-0 lg:w-1/4 w-full sm:w-1/2 sm:px-6 lg:px-0 lg:ml-auto">
+        <div class="">
+            <h5 class="uppercase text-blue-200 font-bold md:mb-5 mb-4 text-xl leading-lg md:text-md md:leading-sm">Contact us</h5>
+            <p class="text-md md:text-sm leading-lg md:leading-sm">Duke Studios, 3 Sheaf St</p>
+            <p class="text-md md:text-sm leading-lg md:leading-sm mb-4">Leeds LS10 1HD</p>
+            <p class="text-md md:text-sm leading-lg md:leading-sm mb-4 font-bold text-blue-200">0113 460 1024</p>
+            <ul class="flex -mx-1">
+            <li class="px-1">
+                <span class="sr-only">Find us on </span>
+                <a href="https://www.linkedin.com/company/the-coders-guild" class="rounded h-10 w-10 lg:h-8 lg:w-8 flex justify-center items-center bg-blue-100">
+                <i class="fab fa-linkedin-in text-white" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="px-1">
+                <span class="sr-only">Find us on </span>
+                <a href="https://twitter.com/the_codersguild" class="rounded h-10 w-10 lg:h-8 lg:w-8 flex justify-center items-center bg-blue-100"><i class="fab fa-twitter text-white" aria-hidden="true"></i></a>
+            </li>
+            <li class="px-1">
+                <span class="sr-only">Find us on </span>
+                <a href="https://www.instagram.com/thecodersguild/" class="rounded h-10 w-10 lg:h-8 lg:w-8 flex justify-center items-center bg-blue-100"><i class="fab fa-instagram text-white" aria-hidden="true"></i></a>
+            </li>
+            <li class="px-1">
+                <span class="sr-only">Find us on </span>
+                <a href="https://www.facebook.com/TheCodersGuild/" class="rounded h-10 w-10 lg:h-8 lg:w-8 flex justify-center items-center bg-blue-100"><i class="fab fa-facebook-f text-white" aria-hidden="true"></i></a>
+            </li>
+            <li class="px-1">
+                <span class="sr-only">Find us on </span>
+                <a href="https://www.youtube.com/channel/UC_By6GiE5aVoMyoTLr5lGZA" class="rounded h-10 w-10 lg:h-8 lg:w-8 flex justify-center items-center bg-blue-100">
+                <i class="fab fa-youtube text-white" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="px-1">
+                <span class="sr-only">Find us on </span>
+                <a href="https://github.com/thecodersguilduk" class="rounded h-10 w-10 lg:h-8 lg:w-8 flex justify-center items-center bg-blue-100"><i class="fab fa-github text-white" aria-hidden="true"></i></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="lg:pt-10 mb-6 sm:mb-0 lg:w-1/4 w-full sm:w-1/2 sm:px-6 lg:px-0">
+        <div class="border-b-2 border-grey-100 sm:border-none">
+            <h5 class="uppercase text-blue-200 font-bold md:mb-5 mb-4 text-xl leading-lg md:text-md md:leading-sm">Quick Links</h5>
+            <ul class="footer-dropdown-content h-auto max-h-0 opacity-0 sm:opacity-100 transition-all ease-in duration-150">
+            <li class="mb-2"><a href="https://thecodersguild.org.uk/pdf/Website Terms and Conditions V1.1.pdf" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Terms and Conditions</a></li>
+            <li class="mb-2"><a href="https://thecodersguild.org.uk/pdf/Complaints%20Policy%20v1.2.pdf" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Complaints</a></li>
+            <li class="mb-2"><a href="https://thecodersguild.org.uk/pdf/Cookie Policy V1.1.pdf" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Cookies</a></li>
+            <li class="mb-2"><a href="https://thecodersguild.org.uk/pdf/tcg_privacy_policy.pdf" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Privacy</a></li>
+            <li class="mb-2"><a href="https://thecodersguild.org.uk/pdf/Modern Slavery Act v1.2.pdf" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Modern Slavery</a></li>
+            <li class="mb-2"><a href="https://thecodersguild.org.uk/policies" class="text-md md:text-sm leading-lg md:leading-sm block text-black">All Policies</a></li>
+            <li class="mb-2"><a href="https://thecodersguild.org.uk/reviews" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Reviews</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="lg:pt-10 mb-6 sm:mb-0 lg:w-1/4 w-full bg-white sm:w-1/2 sm:px-6 lg:px-0">
+        <div class="block lg:mx-0">
+            <div class="mb-4 pr-6 sm:pr-0 sm:mb-4"><img src="/img/wyca-logo.png" alt="" class="h-20 w-auto block relative"></div>
+            <div class="mb-4 pr-6 sm:pr-0 sm:mb-4"><img src="/img/european-structural-investment-funds.png" alt="" class="h-12 w-auto block relative"></div>
+            <div class="mb-4 pr-6 sm:pr-0 sm:mb-4"><img src="/img/dcc.png" alt="" class="h-12 w-auto block relative"></div>
+            <script src="https://widget.trustist.com/JgTmKy9K3kqIxBnXqyliBg/trustistreviewer.js"></script>
+            <div ts-widget="" ts-border-radius="15px" ts-suppress-review-link="true" ts-reviews-url="/reviews">
+                <div class="cleanslate ts-widget">
+                    <div class="ts-widgetBody" style="border-radius: 15px !important; border-width: 1px !important; ">
+                        <div class="ts-widgetLogo" style=""></div>
+                        <div class="ts-widgetContent">
+                            <a href="/reviews" class="ts-widgetLink" rel="external" target="_blank">
+                            <div class="ts-widgetScore" style="color: #e7711b !important; ">
+                                <span class="ts-widgetScoreBig">5.0</span> / 5.0
+                            </div>
+                            <span class="ts-stars">
+                                <div style="width:65px !important; overflow: hidden !important;"><span></span></div>
+                            </span>
+                            </a>
+                            <a class="ts-widgetLinkReviewer" href="/reviews" rel="external" target="_blank" style="color: #e7711b !important; ">9 Customer Reviews</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="bg-blue-200">
+    <div class="inner sm:px-4 lg:px-8 lg:max-w-screen-xl py-2">
+        <div class="flex -mx-6 flex-wrap">
+            <div class="text-white px-6 mb-1 md:mb-0 text-xs md:text-sm">© 2020 The Coders Guild ltd. All rights reserved.</div>
+            <div class="text-white px-6 mb-1 md:mb-0 text-xs md:text-sm">Reg England and Wales: 9622444</div>
+            <div class="text-white px-6 text-xs md:text-sm">UKPRN 10058030</div>
+        </div>
+    </div>
+</div>
+    </footer>
+    <script src="/js/font-awesome.js"></script>
+    <!-- Current page: / -->
+  </body>
+</html>
