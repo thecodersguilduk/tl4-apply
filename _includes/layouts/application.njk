@@ -25,6 +25,9 @@
                                         <span class="required">*</span>
                                     {% endif %}
                                 </label>
+                                {% if field.help %}
+                                    <p class="mt-2 text-sm text-gray-500">{{field.help | safe}}</p>
+                                {% endif %}
                                 {% switch field.type %}
                                     {% case 'text' %}
                                         <input id="{{name}}" name="{{name}}" class="form-input mt-1 mb-1 block w-full placeholder-muted" {% if field.required_message %}required{%endif%} />
@@ -148,9 +151,6 @@
                                         <textarea id="{{name}}" name="{{name}}" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
                                     {%default%}
                                 {% endswitch %}
-                                {% if field.help %}
-                                    <p class="mt-2 text-sm text-gray-500">{{field.help | safe}}</p>
-                                {% endif %}
                                 {% if field.required_message %}
                                     <div class="requiredMessage text-danger text-xs font-bold hidden {{name}}">{{field.required_message}}</div>
                                 {% endif %}
