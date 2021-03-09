@@ -124,17 +124,17 @@
               "label":"What's the highest level of Education you have completed?",
               "class":"wide",
               "help":"",
-              "options":[
-                 "Less than Secondary School",
-                 "Secondary School \/  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)",
-                 "Secondary School \/ GCSE - with grades c and above\/ 4 and above",
-                 "Secondary School \/ College A\/AS levels",
-                 "Some Further Education",
-                 "College Diploma \/ Certificate",
-                 "Undergraduate Degree",
-                 "Masters \/ Graduate Degree",
-                 "Doctorate"
-              ],
+              "options":{
+                  "1": "Less than Secondary School",
+                  "2": "Secondary School \/  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)",
+                  "3": "Secondary School \/ GCSE - with grades c and above\/ 4 and above",
+                  "4": "Secondary School \/ College A\/AS levels",
+                  "5": "Some Further Education",
+                  "6": "College Diploma \/ Certificate",
+                  "7": "Undergraduate Degree",
+                  "8": "Masters \/ Graduate Degree",
+                  "9": "Doctorate"
+               },
               "required_message":"Please provide an answer"
            },
            "dependants":{

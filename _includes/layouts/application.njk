@@ -141,12 +141,12 @@
                                             </script>
                                         {% endif %}
                                     {% case 'select' %}
-                                        <select name="{{name}}" id="{{name}}"> 
+                                        <select name="{{name}}" id="{{name}}" class="form-select"> 
                                             <option value="">Please Select</option>
-                                            {% for option in field.options %}
-                                                <option value="{{option}}">{{option}}</option>
+                                            {% for key,option in field.options %}
+                                                <option value="{{key}}">{{option}}</option>
                                             {% endfor %} 
-                                            </select>
+                                        </select>
                                     {% case 'textarea' %}
                                         <textarea id="{{name}}" name="{{name}}" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
                                     {%default%}

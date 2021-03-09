@@ -146,10 +146,12 @@ jQuery(document).on("click", ".validateFormStepNext, .submitApplication", functi
                 objValues[key] = inputValue;
                 errorMessageClass = '.requiredMessage.'+key
                 jQuery(errorMessageClass).addClass('hidden');
+                jQuery(selector).css('border-width','0');
                 if(!inputValue){
                     if(required){
                         border = 'red';
                         currentStepValidation = false;
+                        jQuery(selector).css('border-width','1px');
                         jQuery(errorMessageClass).removeClass('hidden');
                         if(!scrollToElement){
                             scrollToElement = jQuery(selector);
