@@ -58,7 +58,7 @@
               ],
               "required_message":"Pronouns is required",
               "other":"other",
-              "other_text":"Please enter your preferred pronoun"
+              "other_text":"Please enter below"
            }
         }
      },
@@ -352,16 +352,18 @@
               "class":"wide",
               "help":"",
               "options":[
-                 "Google\/Search",
-                 "Facebook",
-                 "Insta",
-                 "Twitter",
-                 "Advert",
-                 "Tech Talent Charter",
-                 "WYCA",
-                 "Skills Bootcamp Site",
-                 "Other"
-              ]
+                  "Google\/Search",
+                  "Facebook",
+                  "Instagram",
+                  "Twitter",
+                  "Indeed",
+                  "LinkedIn",
+                  "Tech Talent Charter",
+                  "Skills Bootcamp Site",
+                  "Other"
+               ],
+               "other":"Other",
+               "other_text":"Where did you hear about this?"
            },
            "terms":{
               "type":"checkbox",
