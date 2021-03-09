@@ -363,6 +363,7 @@
                   "Other"
                ],
                "other":"Other",
+               "required_message":"Please provide your reference",
                "other_text":"Where did you hear about this?"
            },
            "terms":{
@@ -373,7 +374,8 @@
               "help":"",
               "options":[
                  "I have read and understand the <a href=\"https:\/\/thecodersguild.org.uk\/pdf\/Website%20Terms%20and%20Conditions%20V1.1.pdf\" target=\"_blank\">terms and conditions<\/a>"
-              ]
+              ],
+              "required_message":"You must confirm you have read and understood the terms and conditions"
            },
            "privacy":{
               "type":"checkbox",
@@ -383,7 +385,8 @@
               "help":"",
               "options":[
                  "I have read and understand the <a href=\"https:\/\/thecodersguild.org.uk\/pdf\/tcg_privacy_policy.pdf\" target=\"_blank\">privacy policy<\/a>"
-              ]
+              ],
+              "required_message":"You must confirm you have read and understood the privacy policy"
            }
         }
      }

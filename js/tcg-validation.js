@@ -71,7 +71,15 @@ jQuery(document).on("click", ".validateFormStepNext, .submitApplication", functi
             break;
             case 'checkbox':
                 var checked = false;
-                selector = 'input[name="'+key+'[]"]';
+                switch(key){
+                    case 'terms':
+                    case 'privacy':
+                        selector = 'input[name="'+key+'"]';
+                    break;
+                    default:
+                        selector = 'input[name="'+key+'[]"]';
+                    break;
+                }
                 // console.log(selector);
                 objValues[key] = [];
                 // console.log(objValues);
