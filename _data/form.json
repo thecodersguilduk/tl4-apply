@@ -150,7 +150,7 @@
         "help":"You don't _have_ to tell us this stuff but the DfE (who are paying for the course) have to ask it. All of this data will be held securely and will only be used for anoymous data processsing and evaluation. Feel free to leave out any quastions you don't feel like answering and please don't let it put you off. For more details please see our privacy policy.",
         "fields":{
            "education":{
-              "type":"radio",
+              "type":"select",
               "required":true,
               "label":"What's the highest level of Education you have completed?",
               "class":"wide",
