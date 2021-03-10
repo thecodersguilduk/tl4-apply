@@ -30,7 +30,7 @@ module.exports = function(eleventyConfig) {
       return array.slice(n);
     }
 
-    return array.slice(0, n);
+    return array.slice(0, n); 
   });
 
   eleventyConfig.addFilter("min", (...numbers) => {
