@@ -59,7 +59,38 @@
               "required_message":"Pronouns is required",
               "other":"other",
               "other_text":"Please enter below"
-           }
+           },
+           "where_are_you_looking_to_work":{
+               "type":"checkbox",
+               "required":false,
+               "label":"Where would you be looking to work?",
+               "class":"wide",
+               "help":"",
+               "options":[
+                  "Greater London",
+                  "South East England",
+                  "South West England",
+                  "West Midlands",
+                  "North West England",
+                  "North East England",
+                  "Yorkshire and the Humber",
+                  "East Midlands",
+                  "East of England"
+               ],
+               "required_message":"Please provide an answer",
+               "other":"other",
+               "other_text":"Provide examples seperated by commas"
+            },
+           "opportunity":{
+               "type":"select",
+               "required":false,
+               "label":"Which vacancy are you applying for?",
+               "class":"wide",
+               "help":"If you have come here via the .gov find an apprenticeship site or a job board the vacancy will be for a specific organisation - if not applicable just leave this blank",
+               "options":{
+               },
+               "required_message":"Please provide an answer"
+            }
         }
      },
      {
