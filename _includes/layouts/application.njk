@@ -18,7 +18,7 @@
                     <div class="lg:w-4/6 card-dark p-8">
                         {% set fieldCounter = 0 %}
                         {% for name,field in fieldset.fields %}
-                            <div class="{% if fieldsetCounter != 0 %}mt-8{%endif%}">
+                            <div class="{% if fieldCounter != 0 %}mt-8{%endif%}">
                                 <label for="{{name}}" class="form-label">
                                     {{field.label}}
                                     {% if field.required != 0 %}
@@ -62,7 +62,7 @@
                                             {% endif %}
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="{{fieldID}}" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}" />
+                                                    <input id="{{fieldID}}" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}" value="{{option}}"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="{{fieldID}}" class="font-medium text-gray-700">{{option}}</label>
@@ -103,11 +103,11 @@
                                                 <div class="flex items-center h-5">
                                                     {% switch name %}
                                                         {% case 'terms' %}
-                                                            <input id="terms" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}" />
+                                                            <input id="terms" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}"  value="agreed"/>
                                                         {% case 'privacy' %}
-                                                            <input id="privacy" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}" />
+                                                            <input id="privacy" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}"  value="agreed"/>
                                                         {%default%}
-                                                            <input id="{{fieldID}}" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}[]" />
+                                                            <input id="{{fieldID}}" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}[]"  value="{{option}}"/>
                                                     {% endswitch %}
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
