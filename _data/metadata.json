@@ -1,9 +1,9 @@
 {
   "title": "Software development level 4 - Sign up",
   "url": "http://applysdl4.thecodersguild.org.uk/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "Software development level 4 - This is an apprenticeship scheme ran by The Coders Guild. Use this site to register your interest in this course and start your journey to becoming a web developer.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Software development level 4 - This is an apprenticeship scheme ran by The Coders Guild. Use this site to register your interest in this course and start your journey to becoming a web developer.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "http://applysdl4.thecodersguild.org.uk/"
