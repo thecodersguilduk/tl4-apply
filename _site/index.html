@@ -58,11 +58,8 @@
     </div>
   </div>
 </div>
-<article>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum urna vel leo laoreet, rhoncus sagittis metus consectetur. Integer vel porttitor nunc, id scelerisque dolor. Morbi dolor dui, lobortis placerat fermentum sit amet, ornare sed urna. Ut non eros vitae velit rhoncus imperdiet. Vivamus sodales ipsum odio, sed dictum lorem feugiat at. Vivamus sed lorem velit. Vivamus semper pharetra magna, vitae efficitur leo dignissim a. Vestibulum aliquam mattis erat sed pharetra. Praesent vel pellentesque nisi.</p>
-  <p>Curabitur placerat varius eleifend. Praesent in finibus urna. Suspendisse ac ipsum in massa finibus pharetra et non sem. Nunc id vehicula enim. Ut molestie laoreet diam, sit amet luctus arcu vehicula accumsan. Donec id condimentum nunc, nec posuere dolor. Morbi sed nulla hendrerit, efficitur augue ut, faucibus nibh. Sed ultrices pretium dolor, non tempor nibh viverra sed. Nunc finibus tortor a ante egestas, et aliquet dolor ultricies. Cras consectetur magna leo, quis tristique augue volutpat a. Nam euismod tincidunt neque. Sed arcu felis, aliquam sit amet dapibus ut, venenatis non erat.</p>
-</article>
-<form id="applicationForm">
+<article></article>
+<form id="applicationForm" action="https://formspree.io/f/mpzovwan" method="post">
     <h2 class="my-8">Application Form</h2>
     
     
@@ -98,9 +95,9 @@
                                     
                                 </label>
                                 
+                                
                                         <input id="first_name" name="first_name" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
                                     
-                                
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden first_name">First Name is required.</div>
                                 
@@ -115,9 +112,9 @@
                                     
                                 </label>
                                 
+                                
                                         <input id="last_name" name="last_name" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
                                     
-                                
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden last_name">Last Name is required.</div>
                                 
@@ -131,6 +128,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         <input id="date_of_birth" name="date_of_birth" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
                                         <script>
@@ -150,7 +148,6 @@
                                         </script>
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden date_of_birth">Date of Birth is required.</div>
                                 
                             </div>
@@ -164,11 +161,11 @@
                                     
                                 </label>
                                 
-                                        <input id="email" name="email" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
-                                    
-                                
                                     <p class="mt-2 text-sm text-gray-500">don't worry, we're not going to spam you</p>
                                 
+                                
+                                        <input id="email" name="email" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                    
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden email">A valid email address is required.</div>
                                 
@@ -183,11 +180,11 @@
                                     
                                 </label>
                                 
-                                        <input id="phone_number" name="phone_number" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
-                                    
-                                
                                     <p class="mt-2 text-sm text-gray-500">If we need any clarification with your application it is quicker for us to text you.</p>
                                 
+                                
+                                        <input id="phone_number" name="phone_number" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                    
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden phone_number">Phone Number is required</div>
                                 
@@ -201,6 +198,9 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
+                                    <p class="mt-2 text-sm text-gray-500">Help us to address you properly</p>
+                                
                                 
                                         
                                         
@@ -269,7 +269,7 @@
                                           
                                         
                                             <div class="other other__pronouns">
-                                                <p class="m-2 text-sm text-gray-500">Please enter your preferred pronoun</p>
+                                                <p class="m-2 text-sm text-gray-500">Please enter below</p>
                                                 <input id="pronouns_option_selected" name="pronouns_option_selected" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
                                             </div>
                                             <script>
@@ -286,9 +286,6 @@
                                             </script>
                                         
                                     
-                                
-                                    <p class="mt-2 text-sm text-gray-500">Help us to address you properly</p>
-                                
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden pronouns">Pronouns is required</div>
                                 
@@ -328,11 +325,11 @@
                                     
                                 </label>
                                 
-                                        <textarea id="why_did_user_apply" name="why_did_user_apply" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
-                                    
-                                
                                     <p class="mt-2 text-sm text-gray-500">More than 50 but less than 200 words please :)</p>
                                 
+                                
+                                        <textarea id="why_did_user_apply" name="why_did_user_apply" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
+                                    
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden why_did_user_apply">Please provide an answer</div>
                                 
@@ -346,6 +343,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -524,7 +522,6 @@
                                         
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden languages">Please provide an answer</div>
                                 
                             </div>
@@ -536,12 +533,12 @@
                                     
                                 </label>
                                 
-                                        <textarea id="language_examples" name="language_examples" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
-                                    
-                                
                                     <p class="mt-2 text-sm text-gray-500">More than 50 but less than 200 words please :) <br />
 						Include link(s) to code you have written or a simple overview of something you did on you localhost</p>
                                 
+                                
+                                        <textarea id="language_examples" name="language_examples" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
+                                    
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden language_examples">Please provide an answer</div>
                                 
@@ -556,11 +553,11 @@
                                     
                                 </label>
                                 
-                                        <textarea id="self_taught" name="self_taught" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
-                                    
-                                
                                     <p class="mt-2 text-sm text-gray-500">More than 50 but less than 200 words please :)</p>
                                 
+                                
+                                        <textarea id="self_taught" name="self_taught" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
+                                    
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden self_taught">Please provide an answer</div>
                                 
@@ -602,147 +599,12 @@
                                     
                                 </label>
                                 
+                                
                                         
                                         
-                                        
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <div class="relative flex items-start">
-                                                <div class="flex items-center h-5">
-                                                    <input id="education-Less-than-Secondary-School" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
-                                                </div>
-                                                <div class="ml-3 text-sm leading-5">
-                                                    <label for="education-Less-than-Secondary-School" class="font-medium text-gray-700">Less than Secondary School</label>
-                                                </div>
-                                            </div>
-                                        
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <div class="relative flex items-start">
-                                                <div class="flex items-center h-5">
-                                                    <input id="education-Secondary-School----GCSE---with-grades-3,-2,-1-or-grades-D,-E,-F,-G-(or-similar)" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
-                                                </div>
-                                                <div class="ml-3 text-sm leading-5">
-                                                    <label for="education-Secondary-School----GCSE---with-grades-3,-2,-1-or-grades-D,-E,-F,-G-(or-similar)" class="font-medium text-gray-700">Secondary School /  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)</label>
-                                                </div>
-                                            </div>
-                                        
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <div class="relative flex items-start">
-                                                <div class="flex items-center h-5">
-                                                    <input id="education-Secondary-School---GCSE---with-grades-c-and-above--4-and-above" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
-                                                </div>
-                                                <div class="ml-3 text-sm leading-5">
-                                                    <label for="education-Secondary-School---GCSE---with-grades-c-and-above--4-and-above" class="font-medium text-gray-700">Secondary School / GCSE - with grades c and above/ 4 and above</label>
-                                                </div>
-                                            </div>
-                                        
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <div class="relative flex items-start">
-                                                <div class="flex items-center h-5">
-                                                    <input id="education-Secondary-School---College-A-AS-levels" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
-                                                </div>
-                                                <div class="ml-3 text-sm leading-5">
-                                                    <label for="education-Secondary-School---College-A-AS-levels" class="font-medium text-gray-700">Secondary School / College A/AS levels</label>
-                                                </div>
-                                            </div>
-                                        
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <div class="relative flex items-start">
-                                                <div class="flex items-center h-5">
-                                                    <input id="education-Some-Further-Education" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
-                                                </div>
-                                                <div class="ml-3 text-sm leading-5">
-                                                    <label for="education-Some-Further-Education" class="font-medium text-gray-700">Some Further Education</label>
-                                                </div>
-                                            </div>
-                                        
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <div class="relative flex items-start">
-                                                <div class="flex items-center h-5">
-                                                    <input id="education-College-Diploma---Certificate" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
-                                                </div>
-                                                <div class="ml-3 text-sm leading-5">
-                                                    <label for="education-College-Diploma---Certificate" class="font-medium text-gray-700">College Diploma / Certificate</label>
-                                                </div>
-                                            </div>
-                                        
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <div class="relative flex items-start">
-                                                <div class="flex items-center h-5">
-                                                    <input id="education-Undergraduate-Degree" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
-                                                </div>
-                                                <div class="ml-3 text-sm leading-5">
-                                                    <label for="education-Undergraduate-Degree" class="font-medium text-gray-700">Undergraduate Degree</label>
-                                                </div>
-                                            </div>
-                                        
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <div class="relative flex items-start">
-                                                <div class="flex items-center h-5">
-                                                    <input id="education-Masters---Graduate-Degree" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
-                                                </div>
-                                                <div class="ml-3 text-sm leading-5">
-                                                    <label for="education-Masters---Graduate-Degree" class="font-medium text-gray-700">Masters / Graduate Degree</label>
-                                                </div>
-                                            </div>
-                                        
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <div class="relative flex items-start">
-                                                <div class="flex items-center h-5">
-                                                    <input id="education-Doctorate" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="education" />
-                                                </div>
-                                                <div class="ml-3 text-sm leading-5">
-                                                    <label for="education-Doctorate" class="font-medium text-gray-700">Doctorate</label>
-                                                </div>
-                                            </div>
                                           
                                         
                                     
-                                
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden education">Please provide an answer</div>
                                 
@@ -756,6 +618,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -808,7 +671,6 @@
                                         
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden dependants">Please provide an answer</div>
                                 
                             </div>
@@ -821,6 +683,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -873,7 +736,6 @@
                                         
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden disabilities">Please provide an answer</div>
                                 
                             </div>
@@ -886,6 +748,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -1017,7 +880,6 @@
                                         
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden ethnicity">Please provide an answer</div>
                                 
                             </div>
@@ -1030,6 +892,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -1082,7 +945,6 @@
                                         
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden married">Please provide an answer</div>
                                 
                             </div>
@@ -1095,6 +957,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -1147,7 +1010,6 @@
                                         
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden pregnant">Please provide an answer</div>
                                 
                             </div>
@@ -1160,6 +1022,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -1321,7 +1184,6 @@
                                         
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden religion">Please provide an answer</div>
                                 
                             </div>
@@ -1334,6 +1196,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -1435,7 +1298,6 @@
                                         
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden sexual_orientation">Please provide an answer</div>
                                 
                             </div>
@@ -1448,6 +1310,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -1534,7 +1397,6 @@
                                         
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden gender">Please provide an answer</div>
                                 
                             </div>
@@ -1547,6 +1409,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -1599,7 +1462,6 @@
                                         
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden gender_reassignment">Please provide an answer</div>
                                 
                             </div>
@@ -1639,6 +1501,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -1781,7 +1644,6 @@
                                         
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden employment">Please provide an answer</div>
                                 
                             </div>
@@ -1794,6 +1656,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -1846,7 +1709,6 @@
                                         
                                     
                                 
-                                
                                     <div class="requiredMessage text-danger text-xs font-bold hidden employment_eligability">Please provide an answer</div>
                                 
                             </div>
@@ -1858,11 +1720,11 @@
                                     
                                 </label>
                                 
-                                        <input id="occupation" name="occupation" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
-                                    
-                                
                                     <p class="mt-2 text-sm text-gray-500">What is your current job title (if applicable)</p>
                                 
+                                
+                                        <input id="occupation" name="occupation" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                    
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden occupation">Please provide an answer</div>
                                 
@@ -1877,9 +1739,9 @@
                                     
                                 </label>
                                 
+                                
                                         <input id="postcode" name="postcode" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
                                     
-                                
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden postcode">Please provide a valid postcode</div>
                                 
@@ -1894,9 +1756,9 @@
                                     
                                 </label>
                                 
+                                
                                         <input id="national_insurance" name="national_insurance" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
                                     
-                                
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden national_insurance">Please provide a valid NI number</div>
                                 
@@ -1937,6 +1799,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -1979,10 +1842,10 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="reference-Insta" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                    <input id="reference-Instagram" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
-                                                    <label for="reference-Insta" class="font-medium text-gray-700">Insta</label>
+                                                    <label for="reference-Instagram" class="font-medium text-gray-700">Instagram</label>
                                                 </div>
                                             </div>
                                         
@@ -2009,10 +1872,25 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="reference-Advert" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                    <input id="reference-Indeed" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
-                                                    <label for="reference-Advert" class="font-medium text-gray-700">Advert</label>
+                                                    <label for="reference-Indeed" class="font-medium text-gray-700">Indeed</label>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    <input id="reference-LinkedIn" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    <label for="reference-LinkedIn" class="font-medium text-gray-700">LinkedIn</label>
                                                 </div>
                                             </div>
                                         
@@ -2039,21 +1917,6 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="reference-WYCA" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
-                                                </div>
-                                                <div class="ml-3 text-sm leading-5">
-                                                    <label for="reference-WYCA" class="font-medium text-gray-700">WYCA</label>
-                                                </div>
-                                            </div>
-                                        
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <div class="relative flex items-start">
-                                                <div class="flex items-center h-5">
                                                     <input id="reference-Skills-Bootcamp-Site" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
@@ -2067,6 +1930,8 @@
                                             
                                             
                                             
+                                                
+                                            
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
                                                     <input id="reference-Other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
@@ -2077,8 +1942,26 @@
                                             </div>
                                           
                                         
+                                            <div class="other other__reference">
+                                                <p class="m-2 text-sm text-gray-500">Where did you hear about this?</p>
+                                                <input id="reference_option_selected" name="reference_option_selected" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                            </div>
+                                            <script>
+                                                var fieldIDs = "#reference-Google-Search,#reference-Facebook,#reference-Instagram,#reference-Twitter,#reference-Indeed,#reference-LinkedIn,#reference-Tech-Talent-Charter,#reference-Skills-Bootcamp-Site,#reference-Other";
+                                                jQuery(document).on("click",fieldIDs, function(event) {
+                                                    var currentID = event.target.id;
+                                                    var optionContainer = jQuery('.other__reference');
+                                                    if(currentID == 'reference-Other'){
+                                                        optionContainer.show();
+                                                    } else {
+                                                        optionContainer.hide();
+                                                    }
+                                                });
+                                            </script>
+                                        
                                     
                                 
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden reference">Please provide your reference</div>
                                 
                             </div>
                             
@@ -2090,6 +1973,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -2116,6 +2000,7 @@
                                         
                                     
                                 
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden terms">You must confirm you have read and understood the terms and conditions</div>
                                 
                             </div>
                             
@@ -2127,6 +2012,7 @@
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
                                 
                                         
                                         
@@ -2153,6 +2039,7 @@
                                         
                                     
                                 
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden privacy">You must confirm you have read and understood the privacy policy</div>
                                 
                             </div>
                             
@@ -2174,7 +2061,7 @@
     
 </form>
 <script>
-    var objInputs = [{"name":"about_you","label":"About You","help":"First off let's find out who you are. If completing a form like this is difficult for you to manage please get in touch via applications@thecodersguild.org.uk and we will arrange an apternative way for you to apply.","fields":{"first_name":{"type":"text","required":true,"label":"First Name","class":"first","help":"","required_message":"First Name is required."},"last_name":{"type":"text","required":true,"label":"Last Name","class":"last","help":"","required_message":"Last Name is required."},"date_of_birth":{"type":"date_picker","required":true,"label":"Date of Birth","class":"last","help":"","required_message":"Date of Birth is required."},"email":{"type":"text","required":true,"label":"Email","class":"wide","help":"don't worry, we're not going to spam you","required_message":"A valid email address is required."},"phone_number":{"type":"text","required":true,"label":"Phone Number","class":"wide","help":"If we need any clarification with your application it is quicker for us to text you.","required_message":"Phone Number is required"},"pronouns":{"type":"radio","required":true,"label":"Pronouns","class":"first","help":"Help us to address you properly","options":["he/him","she/her","they/them","other"],"required_message":"Pronouns is required","other":"other","other_text":"Please enter your preferred pronoun"}}},{"name":"application","label":"Application Questions","help":"This course is not right for everyone - these questions will help us make a judgement on whether this pilot course is the right learning path for you. If you are unsuccessful we will still be able to point you to other resources and programmes. Please fill out the questions to the best of your ability.","fields":{"why_did_user_apply":{"type":"textarea","required":true,"label":"What has made you apply for this course?","class":"wide","help":"More than 50 but less than 200 words please :)","required_message":"Please provide an answer"},"languages":{"type":"checkbox","required":true,"label":"Have you had any previous experience with any of these languages?","class":"wide","help":"","options":["HTML","CSS","JavaScript","PHP","Python","Java","c#","other"],"required_message":"Please provide an answer","other":"other","other_text":"Provide examples seperated by commas"},"language_examples":{"type":"textarea","required":false,"label":"Please give us some examples or more info","class":"wide","help":"More than 50 but less than 200 words please :) <br />\n\t\t\t\t\t\tInclude link(s) to code you have written or a simple overview of something you did on you localhost","required_message":"Please provide an answer"},"self_taught":{"type":"textarea","required":true,"label":"Please give us an example of something you have taught yourself","class":"wide","help":"More than 50 but less than 200 words please :)","required_message":"Please provide an answer"}}},{"name":"demographic_data","label":"Demographic Data","help":"You don't _have_ to tell us this stuff but the DfE (who are paying for the course) have to ask it. All of this data will be held securely and will only be used for anoymous data processsing and evaluation. Feel free to leave out any quastions you don't feel like answering and please don't let it put you off. For more details please see our privacy policy.","fields":{"education":{"type":"radio","required":true,"label":"What's the highest level of Education you have completed?","class":"wide","help":"","options":["Less than Secondary School","Secondary School /  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)","Secondary School / GCSE - with grades c and above/ 4 and above","Secondary School / College A/AS levels","Some Further Education","College Diploma / Certificate","Undergraduate Degree","Masters / Graduate Degree","Doctorate"],"required_message":"Please provide an answer"},"dependants":{"type":"radio","required":true,"label":"Do you have caring responsibilities for children or other adults?","class":"wide","help":"","options":["Yes caring for children","Yes caring for adults","No caring responsibilites"],"required_message":"Please provide an answer"},"disabilities":{"type":"radio","required":true,"label":"Do you consider yourself to have a disability / long term health condition?","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"ethnicity":{"type":"radio","required":true,"label":"Ethnicity","class":"wide","help":"","options":["White British","All other white","Mixed / multiple ethnic groups","Asian / Asian British","Black / African / Caribbean / Black British","Other ethnic group","Prefer not to say"],"required_message":"Please provide an answer","other":"Other ethnic group","other_text":"Please provide us with your ethnicity"},"married":{"type":"radio","required":true,"label":"Are you Married or In civil partnership","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"pregnant":{"type":"radio","required":true,"label":"Are you currently pregnant / on parental / maternity leave:","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"religion":{"type":"radio","required":true,"label":"Religion / belief","class":"wide","help":"","options":["No religion","Christian","Buddhist","Hindu","Jewish","Muslim","Sikh","Any other religion","Prefer not to say"],"required_message":"Please provide an answer","other":"Any other religion","other_text":"Please provide your religion"},"sexual_orientation":{"type":"radio","required":true,"label":"Sexual Orientation?","class":"wide","help":"","options":["Heterosexual","Homosexual","Bisexual","Prefer not to say","Other"],"required_message":"Please provide an answer","other":"Other","other_text":"Please enter your sexual orientation"},"gender":{"type":"radio","required":true,"label":"Gender?","class":"wide","help":"","options":["Male","Female","Other","Prefer not to say"],"required_message":"Please provide an answer","other":"Other","other_text":"Please enter your gender"},"gender_reassignment":{"type":"radio","required":true,"label":"Gender Reassignment?","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"}}},{"name":"eligibility","label":"Are you eligible for funding?","help":"This course is Gov funded and FREE for you - so obviously there is paperwork for us to complete. We need this information to be able to progress your application so please don't leave any out.","fields":{"employment":{"type":"radio","required":true,"label":"Employment Status","class":"wide","help":"","options":["in full-time employment","in part-time employment","self-employed","unemployed for more than 12 months","unemployed for less than 12 months","in training /education","retired","long term sickness","parental leave / other caring responsibilities"],"required_message":"Please provide an answer"},"employment_eligability":{"type":"radio","required":true,"label":"Do you have the right to work in the UK?","class":"wide","help":"","options":["Yes","No","Unsure"],"required_message":"Please provide an answer"},"occupation":{"type":"text","required":false,"label":"Occupation","class":"wide","help":"What is your current job title (if applicable)","required_message":"Please provide an answer"},"postcode":{"type":"text","required":true,"label":"Postcode","class":"wide","help":"","required_message":"Please provide a valid postcode"},"national_insurance":{"type":"text","required":true,"label":"National Insurance Number","class":"wide","help":"","required_message":"Please provide a valid NI number"}}},{"name":"one_more_thing","label":"Finally","help":"It really helps us if you let us know what bits of our social media and marketing are working :)","fields":{"reference":{"type":"radio","required":true,"label":"Where did you hear about this?","class":"wide","help":"","options":["Google/Search","Facebook","Insta","Twitter","Advert","Tech Talent Charter","WYCA","Skills Bootcamp Site","Other"]},"terms":{"type":"checkbox","required":true,"label":"Have you read the terms and conditions?","class":"wide","help":"","options":["I have read and understand the <a href=\"https://thecodersguild.org.uk/pdf/Website%20Terms%20and%20Conditions%20V1.1.pdf\" target=\"_blank\">terms and conditions</a>"]},"privacy":{"type":"checkbox","required":true,"label":"Have you read the privacy policy?","class":"wide","help":"","options":["I have read and understand the <a href=\"https://thecodersguild.org.uk/pdf/tcg_privacy_policy.pdf\" target=\"_blank\">privacy policy</a>"]}}}]
+    var objInputs = [{"name":"about_you","label":"About You","help":"First off let's find out who you are. If completing a form like this is difficult for you to manage please get in touch via applications@thecodersguild.org.uk and we will arrange an apternative way for you to apply.","fields":{"first_name":{"type":"text","required":true,"label":"First Name","class":"first","help":"","required_message":"First Name is required."},"last_name":{"type":"text","required":true,"label":"Last Name","class":"last","help":"","required_message":"Last Name is required."},"date_of_birth":{"type":"date_picker","required":true,"label":"Date of Birth","class":"last","help":"","required_message":"Date of Birth is required."},"email":{"type":"text","required":true,"label":"Email","class":"wide","help":"don't worry, we're not going to spam you","required_message":"A valid email address is required."},"phone_number":{"type":"text","required":true,"label":"Phone Number","class":"wide","help":"If we need any clarification with your application it is quicker for us to text you.","required_message":"Phone Number is required"},"pronouns":{"type":"radio","required":true,"label":"Pronouns","class":"first","help":"Help us to address you properly","options":["he/him","she/her","they/them","other"],"required_message":"Pronouns is required","other":"other","other_text":"Please enter below"}}},{"name":"application","label":"Application Questions","help":"This course is not right for everyone - these questions will help us make a judgement on whether this pilot course is the right learning path for you. If you are unsuccessful we will still be able to point you to other resources and programmes. Please fill out the questions to the best of your ability.","fields":{"why_did_user_apply":{"type":"textarea","required":true,"label":"What has made you apply for this course?","class":"wide","help":"More than 50 but less than 200 words please :)","required_message":"Please provide an answer"},"languages":{"type":"checkbox","required":true,"label":"Have you had any previous experience with any of these languages?","class":"wide","help":"","options":["HTML","CSS","JavaScript","PHP","Python","Java","c#","other"],"required_message":"Please provide an answer","other":"other","other_text":"Provide examples seperated by commas"},"language_examples":{"type":"textarea","required":false,"label":"Please give us some examples or more info","class":"wide","help":"More than 50 but less than 200 words please :) <br />\n\t\t\t\t\t\tInclude link(s) to code you have written or a simple overview of something you did on you localhost","required_message":"Please provide an answer"},"self_taught":{"type":"textarea","required":true,"label":"Please give us an example of something you have taught yourself","class":"wide","help":"More than 50 but less than 200 words please :)","required_message":"Please provide an answer"}}},{"name":"demographic_data","label":"Demographic Data","help":"You don't _have_ to tell us this stuff but the DfE (who are paying for the course) have to ask it. All of this data will be held securely and will only be used for anoymous data processsing and evaluation. Feel free to leave out any quastions you don't feel like answering and please don't let it put you off. For more details please see our privacy policy.","fields":{"education":{"type":"radio","required":true,"label":"What's the highest level of Education you have completed?","class":"wide","help":"","options":{"1":"Less than Secondary School","2":"Secondary School /  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)","3":"Secondary School / GCSE - with grades c and above/ 4 and above","4":"Secondary School / College A/AS levels","5":"Some Further Education","6":"College Diploma / Certificate","7":"Undergraduate Degree","8":"Masters / Graduate Degree","9":"Doctorate"},"required_message":"Please provide an answer"},"dependants":{"type":"radio","required":true,"label":"Do you have caring responsibilities for children or other adults?","class":"wide","help":"","options":["Yes caring for children","Yes caring for adults","No caring responsibilites"],"required_message":"Please provide an answer"},"disabilities":{"type":"radio","required":true,"label":"Do you consider yourself to have a disability / long term health condition?","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"ethnicity":{"type":"radio","required":true,"label":"Ethnicity","class":"wide","help":"","options":["White British","All other white","Mixed / multiple ethnic groups","Asian / Asian British","Black / African / Caribbean / Black British","Other ethnic group","Prefer not to say"],"required_message":"Please provide an answer","other":"Other ethnic group","other_text":"Please provide us with your ethnicity"},"married":{"type":"radio","required":true,"label":"Are you Married or In civil partnership","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"pregnant":{"type":"radio","required":true,"label":"Are you currently pregnant / on parental / maternity leave:","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"religion":{"type":"radio","required":true,"label":"Religion / belief","class":"wide","help":"","options":["No religion","Christian","Buddhist","Hindu","Jewish","Muslim","Sikh","Any other religion","Prefer not to say"],"required_message":"Please provide an answer","other":"Any other religion","other_text":"Please provide your religion"},"sexual_orientation":{"type":"radio","required":true,"label":"Sexual Orientation?","class":"wide","help":"","options":["Heterosexual","Homosexual","Bisexual","Prefer not to say","Other"],"required_message":"Please provide an answer","other":"Other","other_text":"Please enter your sexual orientation"},"gender":{"type":"radio","required":true,"label":"Gender?","class":"wide","help":"","options":["Male","Female","Other","Prefer not to say"],"required_message":"Please provide an answer","other":"Other","other_text":"Please enter your gender"},"gender_reassignment":{"type":"radio","required":true,"label":"Gender Reassignment?","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"}}},{"name":"eligibility","label":"Are you eligible for funding?","help":"This course is Gov funded and FREE for you - so obviously there is paperwork for us to complete. We need this information to be able to progress your application so please don't leave any out.","fields":{"employment":{"type":"radio","required":true,"label":"Employment Status","class":"wide","help":"","options":["in full-time employment","in part-time employment","self-employed","unemployed for more than 12 months","unemployed for less than 12 months","in training /education","retired","long term sickness","parental leave / other caring responsibilities"],"required_message":"Please provide an answer"},"employment_eligability":{"type":"radio","required":true,"label":"Do you have the right to work in the UK?","class":"wide","help":"","options":["Yes","No","Unsure"],"required_message":"Please provide an answer"},"occupation":{"type":"text","required":false,"label":"Occupation","class":"wide","help":"What is your current job title (if applicable)","required_message":"Please provide an answer"},"postcode":{"type":"text","required":true,"label":"Postcode","class":"wide","help":"","required_message":"Please provide a valid postcode"},"national_insurance":{"type":"text","required":true,"label":"National Insurance Number","class":"wide","help":"","required_message":"Please provide a valid NI number"}}},{"name":"one_more_thing","label":"Finally","help":"It really helps us if you let us know what bits of our social media and marketing are working :)","fields":{"reference":{"type":"radio","required":true,"label":"Where did you hear about this?","class":"wide","help":"","options":["Google/Search","Facebook","Instagram","Twitter","Indeed","LinkedIn","Tech Talent Charter","Skills Bootcamp Site","Other"],"other":"Other","required_message":"Please provide your reference","other_text":"Where did you hear about this?"},"terms":{"type":"checkbox","required":true,"label":"Have you read the terms and conditions?","class":"wide","help":"","options":["I have read and understand the <a href=\"https://thecodersguild.org.uk/pdf/Website%20Terms%20and%20Conditions%20V1.1.pdf\" target=\"_blank\">terms and conditions</a>"],"required_message":"You must confirm you have read and understood the terms and conditions"},"privacy":{"type":"checkbox","required":true,"label":"Have you read the privacy policy?","class":"wide","help":"","options":["I have read and understand the <a href=\"https://thecodersguild.org.uk/pdf/tcg_privacy_policy.pdf\" target=\"_blank\">privacy policy</a>"],"required_message":"You must confirm you have read and understood the privacy policy"}}}]
 </script>
 
 

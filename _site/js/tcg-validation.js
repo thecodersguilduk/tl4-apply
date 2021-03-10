@@ -71,7 +71,15 @@ jQuery(document).on("click", ".validateFormStepNext, .submitApplication", functi
             break;
             case 'checkbox':
                 var checked = false;
-                selector = 'input[name="'+key+'[]"]';
+                switch(key){
+                    case 'terms':
+                    case 'privacy':
+                        selector = 'input[name="'+key+'"]';
+                    break;
+                    default:
+                        selector = 'input[name="'+key+'[]"]';
+                    break;
+                }
                 // console.log(selector);
                 objValues[key] = [];
                 // console.log(objValues);
@@ -146,10 +154,12 @@ jQuery(document).on("click", ".validateFormStepNext, .submitApplication", functi
                 objValues[key] = inputValue;
                 errorMessageClass = '.requiredMessage.'+key
                 jQuery(errorMessageClass).addClass('hidden');
+                jQuery(selector).css('border-width','0');
                 if(!inputValue){
                     if(required){
                         border = 'red';
                         currentStepValidation = false;
+                        jQuery(selector).css('border-width','1px');
                         jQuery(errorMessageClass).removeClass('hidden');
                         if(!scrollToElement){
                             scrollToElement = jQuery(selector);
@@ -202,18 +212,9 @@ jQuery(document).on("click", ".validateFormStepNext, .submitApplication", functi
         scrollToElement.focus();
     }
     
-    // jQuery('html, body').animate({
-    //     scrollTop: scrollTo
-    // }, 2000);
-    // console.log(objValues);
-    // var data = {
-	// 	'action': 'tcg_add_form_data',
-	// 	'formData': objValues      // We pass php values differently!
-	// };
-	// // We can also pass the url value separately from ajaxurl for front end AJAX implementations
-	// jQuery.post('/wp-admin/admin-ajax.php', data, function(response) {
-	// 	// console.log(response);
-	// });
+    jQuery('html, body').animate({
+        scrollTop: scrollTo
+    }, 2000);
 });
 
 function isValidPostcode(postcode) { 
