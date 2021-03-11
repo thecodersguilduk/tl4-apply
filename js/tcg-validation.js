@@ -245,3 +245,34 @@ jQuery( document ).ready(function() {
     })
     );
 });
+
+jQuery( document ).ready(function() {
+    const menuBtn = document.querySelector(".menu-btn");  
+    // const menuBranding = document.querySelector(".menu-branding");
+    // const navItems = document.querySelectorAll(".nav-item");
+    console.log(menuBtn);
+    let showMenu = false; 
+    menuBtn.addEventListener("click", toggleMenu); 
+    
+    function toggleMenu() { 
+        if (!showMenu) { 
+            menuBtn.classList.add("close"); 
+            jQuery(".showMobileMenu").show(500); 
+            // menuBranding.classList.add("show"); 
+            // navItems.forEach((item) => 
+            //     item.classList.add("show")); 
+
+            // Reset the menu state 
+            showMenu = true; 
+        } else { 
+            menuBtn.classList.remove("close");  
+            jQuery(".showMobileMenu").hide(500); 
+            // menuBranding.classList.remove("show"); 
+            // navItems.forEach((item) => 
+            //     item.classList.remove("show")); 
+
+            // Reset the menu state 
+            showMenu = false; 
+        } 
+    } 
+});
