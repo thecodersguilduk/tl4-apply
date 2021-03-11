@@ -130,13 +130,19 @@
                                             <script>
                                                 var fieldIDs = "{{arrFields.join(',')}}";
                                                 jQuery(document).on("click",fieldIDs, function(event) {
-                                                    var currentID = event.target.id;
+                                                    var selector = '[name ="{{name}}"]';
+                                                    var inputs = jQuery(selector);
                                                     var optionContainer = jQuery('.other__{{name}}');
-                                                    if(currentID == '{{optionID}}'){
-                                                        optionContainer.show();
-                                                    } else {
-                                                        optionContainer.hide();
-                                                    }
+                                                    inputs.each(function( index ) {
+                                                        var currentCheckbox = jQuery(this);
+                                                        if(currentCheckbox.prop('checked')){
+                                                            if(currentCheckbox.attr('id') == '{{optionID}}'){
+                                                                optionContainer.show();   
+                                                            } else {
+                                                                optionContainer.hide();
+                                                            }
+                                                        }
+                                                    });
                                                 });
                                             </script>
                                         {% endif %}
