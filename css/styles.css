@@ -205,3 +205,6 @@ article p{
 select{
 	max-width:100%;
 }
+fieldset a {
+	text-decoration: underline;
+}
