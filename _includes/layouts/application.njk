@@ -103,11 +103,11 @@
                                                 <div class="flex items-center h-5">
                                                     {% switch name %}
                                                         {% case 'terms' %}
-                                                            <input id="terms" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}"  value="agreed"/>
+                                                            <input id="terms" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}"  value="true"/>
                                                         {% case 'privacy' %}
-                                                            <input id="privacy" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}"  value="agreed"/>
+                                                            <input id="privacy" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}"  value="true"/>
                                                         {%default%}
-                                                            <input id="{{fieldID}}" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}[]"  value="{{option}}"/>
+                                                            <input id="{{fieldID}}" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="{{name}}"  value="{{option}}"/>
                                                     {% endswitch %}
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
