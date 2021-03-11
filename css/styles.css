@@ -208,3 +208,6 @@ select{
 fieldset a {
 	text-decoration: underline;
 }
+.form-label{
+	text-transform: none;
+}
