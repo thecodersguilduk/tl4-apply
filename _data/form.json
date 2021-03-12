@@ -331,7 +331,9 @@
                  "long term sickness",
                  "parental leave \/ other caring responsibilities"
               ],
-              "required_message":"Please provide an answer"
+              "required_message":"Please provide an answer",
+              "other":"in training \/education",
+              "other_text":"If you are studying, what are you studying and where?"
            },
            "employment_eligability":{
               "type":"radio",
