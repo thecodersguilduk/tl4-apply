@@ -88,6 +88,7 @@
                "class":"wide",
                "help":"If you have come here via the .gov find an apprenticeship site or a job board the vacancy will be for a specific organisation - if not applicable just leave this blank",
                "options":{
+                  "Meeow Limited": "Meeow Ltd in Leeds",
                   "Silkstream in Southend-on-Sea": "Silkstream in Southend-on-Sea",
                   "Flex4 in Cumbria": "Flex4 in Cumbria",
                   "Star Editions in Ipswich": "Star Editions in Ipswich"
