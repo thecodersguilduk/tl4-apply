@@ -20,6 +20,14 @@
               "help":"",
               "required_message":"Last Name is required."
            },
+           "preferred_name":{
+                "type":"text",
+               "required":true,
+               "label":"Preferred Name",
+               "class":"preferred",
+               "help":"",
+               "required_message":"Preferred Name is required."
+            },
            "date_of_birth":{
               "type":"date_picker",
               "required":true,

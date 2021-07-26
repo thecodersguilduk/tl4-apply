@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Blog Name</title>
-    <meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+    <title>Software development level 4 - Sign up</title>
+    <meta name="description" content="Software development level 4 - This is an apprenticeship scheme ran by The Coders Guild. Use this site to register your interest in this course and start your journey to becoming a web developer.">
     
     <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Your Blog Name">
-    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Your Blog Name">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Software development level 4 - Sign up">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Software development level 4 - Sign up">
     <script src="/js/jquery.js"></script>
     <script src="/js/jquery-ui.js"></script>
     <script src="/js/tcg-validation.js"></script>
@@ -31,7 +31,22 @@
     </div>
     <div class="hidden lg:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
         <div class="menu-menu-1-container">
-            
+            <nav>
+                <ul class="flex -mx-3">
+                    <li class="px-4">
+                        <a href="https://thecodersguild.org.uk/about" class="block py-2 font-bold text-grey-300 font-heading hover:text-blue-200 focus:text-blue-100 active:text-blue-100 capitalize">about</a>
+                    </li>
+                    <li class="px-4">
+                        <a href="https://thecodersguild.org.uk/apprenticeships" class="block py-2 font-bold text-grey-300 font-heading hover:text-blue-200 focus:text-blue-100 active:text-blue-100 capitalize">apprenticeships</a>
+                    </li>
+                    <li class="px-4">
+                        <a href="https://thecodersguild.org.uk/blog" class="block py-2 font-bold text-grey-300 font-heading hover:text-blue-200 focus:text-blue-100 active:text-blue-100 capitalize">blog</a>
+                    </li>
+                    <li class="px-4">
+                        <a href="https://thecodersguild.org.uk/contact-us" class="block py-2 font-bold text-grey-300 font-heading hover:text-blue-200 focus:text-blue-100 active:text-blue-100 capitalize">contact us</a>
+                    </li>
+                </ul>
+            </nav>
         </div>     
     </div>
     <div class="flex lg:hidden items-center justify-end flex-1">
@@ -44,7 +59,24 @@
         </button>
     </div>
     </div>
-    
+    <div class="showMobileMenu">
+        <div class="menu-menu-1-container">
+            <ul id="mobile-menu" class="menu">
+                <li class="px-4">
+                    <a href="https://thecodersguild.org.uk/about" class="block py-2 font-bold text-grey-300 font-heading hover:text-blue-200 focus:text-blue-100 active:text-blue-100 capitalize">about</a>
+                </li>
+                <li class="px-4">
+                    <a href="https://thecodersguild.org.uk/apprenticeships" class="block py-2 font-bold text-grey-300 font-heading hover:text-blue-200 focus:text-blue-100 active:text-blue-100 capitalize">apprenticeships</a>
+                </li>
+                <li class="px-4">
+                    <a href="https://thecodersguild.org.uk/blog" class="block py-2 font-bold text-grey-300 font-heading hover:text-blue-200 focus:text-blue-100 active:text-blue-100 capitalize">blog</a>
+                </li>
+                <li class="px-4">
+                    <a href="https://thecodersguild.org.uk/contact-us" class="block py-2 font-bold text-grey-300 font-heading hover:text-blue-200 focus:text-blue-100 active:text-blue-100 capitalize">contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 </div>
     </header>
@@ -54,7 +86,7 @@
         <div class="hero relative bg-white">
   <div class="top-0 w-full h-full">
     <div class="flex flex-col justify-center items-center py-10 w-full h-full">
-      <h1 class="text-blue-100 text-center mb-0 text-3xl leading-5xl max-w-md md:max-w-full">Bootcamp: Web and App Development with JAMStack</h1>
+      <h1 class="text-blue-100 text-center mb-0 text-3xl leading-5xl max-w-md md:max-w-full">Software Developer Level 4: Apprenticeship scheme</h1>
     </div>
   </div>
 </div>
@@ -104,7 +136,7 @@
                             </div>
                             
                         
-                            <div class="">
+                            <div class="mt-8">
                                 <label for="last_name" class="form-label">
                                     Last Name
                                     
@@ -121,13 +153,32 @@
                             </div>
                             
                         
-                            <div class="">
+                            <div class="mt-8">
+                                <label for="preferred_name" class="form-label">
+                                    Preferred Name
+                                    
+                                        <span class="required">*</span>
+                                    
+                                </label>
+                                
+                                
+                                        <input id="preferred_name" name="preferred_name" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                    
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden preferred_name">Preferred Name is required.</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
                                 <label for="date_of_birth" class="form-label">
                                     Date of Birth
                                     
                                         <span class="required">*</span>
                                     
                                 </label>
+                                
+                                    <p class="mt-2 text-sm text-gray-500">Month/Day/Year format required</p>
                                 
                                 
                                         <input id="date_of_birth" name="date_of_birth" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
@@ -153,7 +204,7 @@
                             </div>
                             
                         
-                            <div class="">
+                            <div class="mt-8">
                                 <label for="email" class="form-label">
                                     Email
                                     
@@ -172,7 +223,7 @@
                             </div>
                             
                         
-                            <div class="">
+                            <div class="mt-8">
                                 <label for="phone_number" class="form-label">
                                     Phone Number
                                     
@@ -191,7 +242,7 @@
                             </div>
                             
                         
-                            <div class="">
+                            <div class="mt-8">
                                 <label for="pronouns" class="form-label">
                                     Pronouns
                                     
@@ -213,7 +264,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="pronouns-he-him" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pronouns" />
+                                                    <input id="pronouns-he-him" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pronouns" value="he/him"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="pronouns-he-him" class="font-medium text-gray-700">he/him</label>
@@ -228,7 +279,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="pronouns-she-her" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pronouns" />
+                                                    <input id="pronouns-she-her" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pronouns" value="she/her"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="pronouns-she-her" class="font-medium text-gray-700">she/her</label>
@@ -243,7 +294,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="pronouns-they-them" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pronouns" />
+                                                    <input id="pronouns-they-them" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pronouns" value="they/them"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="pronouns-they-them" class="font-medium text-gray-700">they/them</label>
@@ -260,7 +311,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="pronouns-other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pronouns" />
+                                                    <input id="pronouns-other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pronouns" value="other"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="pronouns-other" class="font-medium text-gray-700">other</label>
@@ -292,6 +343,248 @@
                             </div>
                             
                         
+                            <div class="mt-8">
+                                <label for="where_are_you_looking_to_work" class="form-label">
+                                    Where would you be looking to work?
+                                    
+                                </label>
+                                
+                                
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="where_are_you_looking_to_work-Greater-London" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="where_are_you_looking_to_work"  value="Greater London"/>
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="where_are_you_looking_to_work-Greater-London" class="font-medium text-gray-700">Greater London</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="where_are_you_looking_to_work-South-East-England" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="where_are_you_looking_to_work"  value="South East England"/>
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="where_are_you_looking_to_work-South-East-England" class="font-medium text-gray-700">South East England</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="where_are_you_looking_to_work-South-West-England" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="where_are_you_looking_to_work"  value="South West England"/>
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="where_are_you_looking_to_work-South-West-England" class="font-medium text-gray-700">South West England</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="where_are_you_looking_to_work-West-Midlands" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="where_are_you_looking_to_work"  value="West Midlands"/>
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="where_are_you_looking_to_work-West-Midlands" class="font-medium text-gray-700">West Midlands</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="where_are_you_looking_to_work-North-West-England" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="where_are_you_looking_to_work"  value="North West England"/>
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="where_are_you_looking_to_work-North-West-England" class="font-medium text-gray-700">North West England</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="where_are_you_looking_to_work-North-East-England" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="where_are_you_looking_to_work"  value="North East England"/>
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="where_are_you_looking_to_work-North-East-England" class="font-medium text-gray-700">North East England</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="where_are_you_looking_to_work-Yorkshire-and-the-Humber" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="where_are_you_looking_to_work"  value="Yorkshire and the Humber"/>
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="where_are_you_looking_to_work-Yorkshire-and-the-Humber" class="font-medium text-gray-700">Yorkshire and the Humber</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="where_are_you_looking_to_work-East-Midlands" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="where_are_you_looking_to_work"  value="East Midlands"/>
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="where_are_you_looking_to_work-East-Midlands" class="font-medium text-gray-700">East Midlands</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="relative flex items-start">
+                                                <div class="flex items-center h-5">
+                                                    
+                                                            <input id="where_are_you_looking_to_work-East-of-England" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="where_are_you_looking_to_work"  value="East of England"/>
+                                                    
+                                                </div>
+                                                <div class="ml-3 text-sm leading-5">
+                                                    
+                                                            <label for="where_are_you_looking_to_work-East-of-England" class="font-medium text-gray-700">East of England</label>
+                                                    
+                                                </div>
+                                            </div>
+                                         
+                                        
+                                            <div class="other other__where_are_you_looking_to_work">
+                                                <p class="m-2 text-sm text-gray-500">Provide examples seperated by commas</p>
+                                                <input id="where_are_you_looking_to_work_option_selected" name="where_are_you_looking_to_work_option_selected" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                            </div>
+                                            <script>
+                                                var fieldIDs = "#where_are_you_looking_to_work-Greater-London,#where_are_you_looking_to_work-South-East-England,#where_are_you_looking_to_work-South-West-England,#where_are_you_looking_to_work-West-Midlands,#where_are_you_looking_to_work-North-West-England,#where_are_you_looking_to_work-North-East-England,#where_are_you_looking_to_work-Yorkshire-and-the-Humber,#where_are_you_looking_to_work-East-Midlands,#where_are_you_looking_to_work-East-of-England";
+                                                jQuery(document).on("click",fieldIDs, function(event) {
+                                                    var selector = '[name ="where_are_you_looking_to_work"]';
+                                                    var inputs = jQuery(selector);
+                                                    var optionContainer = jQuery('.other__where_are_you_looking_to_work');
+                                                    inputs.each(function( index ) {
+                                                        var currentCheckbox = jQuery(this);
+                                                        if(currentCheckbox.prop('checked')){
+                                                            if(currentCheckbox.attr('id') == ''){
+                                                                optionContainer.show();   
+                                                            } else {
+                                                                optionContainer.hide();
+                                                            }
+                                                        }
+                                                    });
+                                                });
+                                            </script>
+                                        
+                                    
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden where_are_you_looking_to_work">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
+                            <div class="mt-8">
+                                <label for="opportunity" class="form-label">
+                                    Which vacancy are you applying for?
+                                    
+                                </label>
+                                
+                                    <p class="mt-2 text-sm text-gray-500">If you have come here via the .gov find an apprenticeship site or a job board the vacancy will be for a specific organisation - if not applicable just leave this blank</p>
+                                
+                                
+                                        <div class="relative flex items-start">
+                                            <select name="opportunity" id="opportunity" class="form-select"> 
+                                                <option value="">Please Select</option>
+                                                
+                                                    <option value="Meeow Limited">Meeow Ltd in Leeds</option>
+                                                
+                                                    <option value="Silkstream in Southend-on-Sea">Silkstream in Southend-on-Sea</option>
+                                                
+                                                    <option value="Flex4 in Cumbria">Flex4 in Cumbria</option>
+                                                
+                                                    <option value="Star Editions in Ipswich">Star Editions in Ipswich</option>
+                                                 
+                                            </select>
+                                        </div>
+                                    
+                                
+                                    <div class="requiredMessage text-danger text-xs font-bold hidden opportunity">Please provide an answer</div>
+                                
+                            </div>
+                            
+                        
                     </div>
                 </div>
                 <div class="buttonContainer">
@@ -317,7 +610,7 @@
                     <div class="lg:w-4/6 card-dark p-8">
                         
                         
-                            <div class="mt-8">
+                            <div class="">
                                 <label for="why_did_user_apply" class="form-label">
                                     What has made you apply for this course?
                                     
@@ -357,7 +650,7 @@
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
                                                     
-                                                            <input id="languages-HTML" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                            <input id="languages-HTML" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages"  value="HTML"/>
                                                     
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
@@ -376,7 +669,7 @@
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
                                                     
-                                                            <input id="languages-CSS" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                            <input id="languages-CSS" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages"  value="CSS"/>
                                                     
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
@@ -395,7 +688,7 @@
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
                                                     
-                                                            <input id="languages-JavaScript" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                            <input id="languages-JavaScript" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages"  value="JavaScript"/>
                                                     
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
@@ -414,7 +707,7 @@
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
                                                     
-                                                            <input id="languages-PHP" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                            <input id="languages-PHP" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages"  value="PHP"/>
                                                     
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
@@ -433,7 +726,7 @@
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
                                                     
-                                                            <input id="languages-Python" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                            <input id="languages-Python" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages"  value="Python"/>
                                                     
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
@@ -452,7 +745,7 @@
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
                                                     
-                                                            <input id="languages-Java" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                            <input id="languages-Java" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages"  value="Java"/>
                                                     
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
@@ -471,7 +764,7 @@
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
                                                     
-                                                            <input id="languages-c" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                            <input id="languages-c" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages"  value="c#"/>
                                                     
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
@@ -492,7 +785,7 @@
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
                                                     
-                                                            <input id="languages-other" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages[]" />
+                                                            <input id="languages-other" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="languages"  value="other"/>
                                                     
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
@@ -510,13 +803,19 @@
                                             <script>
                                                 var fieldIDs = "#languages-HTML,#languages-CSS,#languages-JavaScript,#languages-PHP,#languages-Python,#languages-Java,#languages-c,#languages-other";
                                                 jQuery(document).on("click",fieldIDs, function(event) {
-                                                    var currentID = event.target.id;
+                                                    var selector = '[name ="languages"]';
+                                                    var inputs = jQuery(selector);
                                                     var optionContainer = jQuery('.other__languages');
-                                                    if(currentID == 'languages-other'){
-                                                        optionContainer.show();
-                                                    } else {
-                                                        optionContainer.hide();
-                                                    }
+                                                    inputs.each(function( index ) {
+                                                        var currentCheckbox = jQuery(this);
+                                                        if(currentCheckbox.prop('checked')){
+                                                            if(currentCheckbox.attr('id') == 'languages-other'){
+                                                                optionContainer.show();   
+                                                            } else {
+                                                                optionContainer.hide();
+                                                            }
+                                                        }
+                                                    });
                                                 });
                                             </script>
                                         
@@ -585,13 +884,13 @@
                     <div class="lg:w-2/6 p-8">
                         <label for="" class="form-label">Demographic Data</label>
                         
-                            <p class="mt-1 text-sm leading-5 text-gray-500">You don&#39;t _have_ to tell us this stuff but the DfE (who are paying for the course) have to ask it. All of this data will be held securely and will only be used for anoymous data processsing and evaluation. Feel free to leave out any quastions you don&#39;t feel like answering and please don&#39;t let it put you off. For more details please see our privacy policy. </p>
+                            <p class="mt-1 text-sm leading-5 text-gray-500">You don&#39;t _have_ to tell us this stuff but the DfE (who are paying for the course) have to ask it. All of this data will be held securely and will only be used for anoymous data processsing and evaluation. Feel free to leave out any questions you don&#39;t feel like answering and please don&#39;t let it put you off. For more details please see our privacy policy. </p>
                         
                     </div>
                     <div class="lg:w-4/6 card-dark p-8">
                         
                         
-                            <div class="mt-8">
+                            <div class="">
                                 <label for="education" class="form-label">
                                     What&#39;s the highest level of Education you have completed?
                                     
@@ -600,10 +899,30 @@
                                 </label>
                                 
                                 
-                                        
-                                        
-                                          
-                                        
+                                        <div class="relative flex items-start">
+                                            <select name="education" id="education" class="form-select"> 
+                                                <option value="">Please Select</option>
+                                                
+                                                    <option value="1">Less than Secondary School</option>
+                                                
+                                                    <option value="2">Secondary School /  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)</option>
+                                                
+                                                    <option value="3">Secondary School / GCSE - with grades c and above/ 4 and above</option>
+                                                
+                                                    <option value="4">Secondary School / College A/AS levels</option>
+                                                
+                                                    <option value="5">Some Further Education</option>
+                                                
+                                                    <option value="6">College Diploma / Certificate</option>
+                                                
+                                                    <option value="7">Undergraduate Degree</option>
+                                                
+                                                    <option value="8">Masters / Graduate Degree</option>
+                                                
+                                                    <option value="9">Doctorate</option>
+                                                 
+                                            </select>
+                                        </div>
                                     
                                 
                                     <div class="requiredMessage text-danger text-xs font-bold hidden education">Please provide an answer</div>
@@ -631,7 +950,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="dependants-Yes-caring-for-children" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="dependants" />
+                                                    <input id="dependants-Yes-caring-for-children" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="dependants" value="Yes caring for children"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="dependants-Yes-caring-for-children" class="font-medium text-gray-700">Yes caring for children</label>
@@ -646,7 +965,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="dependants-Yes-caring-for-adults" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="dependants" />
+                                                    <input id="dependants-Yes-caring-for-adults" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="dependants" value="Yes caring for adults"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="dependants-Yes-caring-for-adults" class="font-medium text-gray-700">Yes caring for adults</label>
@@ -661,7 +980,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="dependants-No-caring-responsibilites" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="dependants" />
+                                                    <input id="dependants-No-caring-responsibilites" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="dependants" value="No caring responsibilites"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="dependants-No-caring-responsibilites" class="font-medium text-gray-700">No caring responsibilites</label>
@@ -696,7 +1015,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="disabilities-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="disabilities" />
+                                                    <input id="disabilities-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="disabilities" value="Yes"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="disabilities-Yes" class="font-medium text-gray-700">Yes</label>
@@ -711,7 +1030,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="disabilities-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="disabilities" />
+                                                    <input id="disabilities-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="disabilities" value="No"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="disabilities-No" class="font-medium text-gray-700">No</label>
@@ -726,7 +1045,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="disabilities-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="disabilities" />
+                                                    <input id="disabilities-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="disabilities" value="Prefer not to say"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="disabilities-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
@@ -761,7 +1080,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="ethnicity-White-British" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                    <input id="ethnicity-White-British" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" value="White British"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="ethnicity-White-British" class="font-medium text-gray-700">White British</label>
@@ -776,7 +1095,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="ethnicity-All-other-white" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                    <input id="ethnicity-All-other-white" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" value="All other white"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="ethnicity-All-other-white" class="font-medium text-gray-700">All other white</label>
@@ -791,7 +1110,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="ethnicity-Mixed---multiple-ethnic-groups" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                    <input id="ethnicity-Mixed---multiple-ethnic-groups" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" value="Mixed / multiple ethnic groups"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="ethnicity-Mixed---multiple-ethnic-groups" class="font-medium text-gray-700">Mixed / multiple ethnic groups</label>
@@ -806,7 +1125,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="ethnicity-Asian---Asian-British" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                    <input id="ethnicity-Asian---Asian-British" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" value="Asian / Asian British"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="ethnicity-Asian---Asian-British" class="font-medium text-gray-700">Asian / Asian British</label>
@@ -821,7 +1140,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="ethnicity-Black---African---Caribbean---Black-British" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                    <input id="ethnicity-Black---African---Caribbean---Black-British" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" value="Black / African / Caribbean / Black British"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="ethnicity-Black---African---Caribbean---Black-British" class="font-medium text-gray-700">Black / African / Caribbean / Black British</label>
@@ -838,7 +1157,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="ethnicity-Other-ethnic-group" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                    <input id="ethnicity-Other-ethnic-group" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" value="Other ethnic group"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="ethnicity-Other-ethnic-group" class="font-medium text-gray-700">Other ethnic group</label>
@@ -853,7 +1172,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="ethnicity-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" />
+                                                    <input id="ethnicity-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="ethnicity" value="Prefer not to say"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="ethnicity-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
@@ -905,7 +1224,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="married-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="married" />
+                                                    <input id="married-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="married" value="Yes"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="married-Yes" class="font-medium text-gray-700">Yes</label>
@@ -920,7 +1239,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="married-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="married" />
+                                                    <input id="married-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="married" value="No"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="married-No" class="font-medium text-gray-700">No</label>
@@ -935,7 +1254,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="married-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="married" />
+                                                    <input id="married-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="married" value="Prefer not to say"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="married-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
@@ -970,7 +1289,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="pregnant-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pregnant" />
+                                                    <input id="pregnant-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pregnant" value="Yes"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="pregnant-Yes" class="font-medium text-gray-700">Yes</label>
@@ -985,7 +1304,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="pregnant-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pregnant" />
+                                                    <input id="pregnant-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pregnant" value="No"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="pregnant-No" class="font-medium text-gray-700">No</label>
@@ -1000,7 +1319,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="pregnant-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pregnant" />
+                                                    <input id="pregnant-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="pregnant" value="Prefer not to say"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="pregnant-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
@@ -1035,7 +1354,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="religion-No-religion" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                    <input id="religion-No-religion" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" value="No religion"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="religion-No-religion" class="font-medium text-gray-700">No religion</label>
@@ -1050,7 +1369,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="religion-Christian" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                    <input id="religion-Christian" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" value="Christian"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="religion-Christian" class="font-medium text-gray-700">Christian</label>
@@ -1065,7 +1384,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="religion-Buddhist" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                    <input id="religion-Buddhist" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" value="Buddhist"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="religion-Buddhist" class="font-medium text-gray-700">Buddhist</label>
@@ -1080,7 +1399,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="religion-Hindu" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                    <input id="religion-Hindu" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" value="Hindu"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="religion-Hindu" class="font-medium text-gray-700">Hindu</label>
@@ -1095,7 +1414,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="religion-Jewish" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                    <input id="religion-Jewish" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" value="Jewish"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="religion-Jewish" class="font-medium text-gray-700">Jewish</label>
@@ -1110,7 +1429,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="religion-Muslim" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                    <input id="religion-Muslim" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" value="Muslim"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="religion-Muslim" class="font-medium text-gray-700">Muslim</label>
@@ -1125,7 +1444,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="religion-Sikh" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                    <input id="religion-Sikh" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" value="Sikh"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="religion-Sikh" class="font-medium text-gray-700">Sikh</label>
@@ -1142,7 +1461,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="religion-Any-other-religion" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                    <input id="religion-Any-other-religion" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" value="Any other religion"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="religion-Any-other-religion" class="font-medium text-gray-700">Any other religion</label>
@@ -1157,7 +1476,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="religion-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" />
+                                                    <input id="religion-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="religion" value="Prefer not to say"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="religion-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
@@ -1209,7 +1528,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="sexual_orientation-Heterosexual" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" />
+                                                    <input id="sexual_orientation-Heterosexual" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" value="Heterosexual"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="sexual_orientation-Heterosexual" class="font-medium text-gray-700">Heterosexual</label>
@@ -1224,7 +1543,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="sexual_orientation-Homosexual" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" />
+                                                    <input id="sexual_orientation-Homosexual" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" value="Homosexual"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="sexual_orientation-Homosexual" class="font-medium text-gray-700">Homosexual</label>
@@ -1239,7 +1558,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="sexual_orientation-Bisexual" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" />
+                                                    <input id="sexual_orientation-Bisexual" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" value="Bisexual"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="sexual_orientation-Bisexual" class="font-medium text-gray-700">Bisexual</label>
@@ -1254,7 +1573,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="sexual_orientation-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" />
+                                                    <input id="sexual_orientation-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" value="Prefer not to say"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="sexual_orientation-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
@@ -1271,7 +1590,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="sexual_orientation-Other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" />
+                                                    <input id="sexual_orientation-Other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="sexual_orientation" value="Other"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="sexual_orientation-Other" class="font-medium text-gray-700">Other</label>
@@ -1323,7 +1642,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="gender-Male" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender" />
+                                                    <input id="gender-Male" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender" value="Male"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="gender-Male" class="font-medium text-gray-700">Male</label>
@@ -1338,7 +1657,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="gender-Female" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender" />
+                                                    <input id="gender-Female" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender" value="Female"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="gender-Female" class="font-medium text-gray-700">Female</label>
@@ -1355,7 +1674,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="gender-Other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender" />
+                                                    <input id="gender-Other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender" value="Other"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="gender-Other" class="font-medium text-gray-700">Other</label>
@@ -1370,7 +1689,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="gender-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender" />
+                                                    <input id="gender-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender" value="Prefer not to say"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="gender-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
@@ -1422,7 +1741,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="gender_reassignment-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender_reassignment" />
+                                                    <input id="gender_reassignment-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender_reassignment" value="Yes"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="gender_reassignment-Yes" class="font-medium text-gray-700">Yes</label>
@@ -1437,7 +1756,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="gender_reassignment-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender_reassignment" />
+                                                    <input id="gender_reassignment-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender_reassignment" value="No"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="gender_reassignment-No" class="font-medium text-gray-700">No</label>
@@ -1452,7 +1771,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="gender_reassignment-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender_reassignment" />
+                                                    <input id="gender_reassignment-Prefer-not-to-say" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="gender_reassignment" value="Prefer not to say"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="gender_reassignment-Prefer-not-to-say" class="font-medium text-gray-700">Prefer not to say</label>
@@ -1494,7 +1813,7 @@
                     <div class="lg:w-4/6 card-dark p-8">
                         
                         
-                            <div class="mt-8">
+                            <div class="">
                                 <label for="employment" class="form-label">
                                     Employment Status
                                     
@@ -1514,7 +1833,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="employment-in-full-time-employment" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                    <input id="employment-in-full-time-employment" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" value="in full-time employment"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="employment-in-full-time-employment" class="font-medium text-gray-700">in full-time employment</label>
@@ -1529,7 +1848,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="employment-in-part-time-employment" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                    <input id="employment-in-part-time-employment" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" value="in part-time employment"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="employment-in-part-time-employment" class="font-medium text-gray-700">in part-time employment</label>
@@ -1544,7 +1863,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="employment-self-employed" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                    <input id="employment-self-employed" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" value="self-employed"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="employment-self-employed" class="font-medium text-gray-700">self-employed</label>
@@ -1559,7 +1878,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="employment-unemployed-for-more-than-12-months" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                    <input id="employment-unemployed-for-more-than-12-months" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" value="unemployed for more than 12 months"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="employment-unemployed-for-more-than-12-months" class="font-medium text-gray-700">unemployed for more than 12 months</label>
@@ -1574,7 +1893,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="employment-unemployed-for-less-than-12-months" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                    <input id="employment-unemployed-for-less-than-12-months" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" value="unemployed for less than 12 months"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="employment-unemployed-for-less-than-12-months" class="font-medium text-gray-700">unemployed for less than 12 months</label>
@@ -1587,9 +1906,11 @@
                                             
                                             
                                             
+                                                
+                                            
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="employment-in-training--education" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                    <input id="employment-in-training--education" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" value="in training /education"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="employment-in-training--education" class="font-medium text-gray-700">in training /education</label>
@@ -1604,7 +1925,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="employment-retired" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                    <input id="employment-retired" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" value="retired"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="employment-retired" class="font-medium text-gray-700">retired</label>
@@ -1619,7 +1940,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="employment-long-term-sickness" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                    <input id="employment-long-term-sickness" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" value="long term sickness"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="employment-long-term-sickness" class="font-medium text-gray-700">long term sickness</label>
@@ -1634,13 +1955,30 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="employment-parental-leave---other-caring-responsibilities" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" />
+                                                    <input id="employment-parental-leave---other-caring-responsibilities" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment" value="parental leave / other caring responsibilities"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="employment-parental-leave---other-caring-responsibilities" class="font-medium text-gray-700">parental leave / other caring responsibilities</label>
                                                 </div>
                                             </div>
                                           
+                                        
+                                            <div class="other other__employment">
+                                                <p class="m-2 text-sm text-gray-500">If you are studying, what are you studying and where?</p>
+                                                <input id="employment_option_selected" name="employment_option_selected" class="form-input mt-1 mb-1 block w-full placeholder-muted" required />
+                                            </div>
+                                            <script>
+                                                var fieldIDs = "#employment-in-full-time-employment,#employment-in-part-time-employment,#employment-self-employed,#employment-unemployed-for-more-than-12-months,#employment-unemployed-for-less-than-12-months,#employment-in-training--education,#employment-retired,#employment-long-term-sickness,#employment-parental-leave---other-caring-responsibilities";
+                                                jQuery(document).on("click",fieldIDs, function(event) {
+                                                    var currentID = event.target.id;
+                                                    var optionContainer = jQuery('.other__employment');
+                                                    if(currentID == 'employment-in-training--education'){
+                                                        optionContainer.show();
+                                                    } else {
+                                                        optionContainer.hide();
+                                                    }
+                                                });
+                                            </script>
                                         
                                     
                                 
@@ -1669,7 +2007,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="employment_eligability-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment_eligability" />
+                                                    <input id="employment_eligability-Yes" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment_eligability" value="Yes"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="employment_eligability-Yes" class="font-medium text-gray-700">Yes</label>
@@ -1684,7 +2022,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="employment_eligability-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment_eligability" />
+                                                    <input id="employment_eligability-No" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment_eligability" value="No"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="employment_eligability-No" class="font-medium text-gray-700">No</label>
@@ -1699,7 +2037,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="employment_eligability-Unsure" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment_eligability" />
+                                                    <input id="employment_eligability-Unsure" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="employment_eligability" value="Unsure"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="employment_eligability-Unsure" class="font-medium text-gray-700">Unsure</label>
@@ -1792,7 +2130,7 @@
                     <div class="lg:w-4/6 card-dark p-8">
                         
                         
-                            <div class="mt-8">
+                            <div class="">
                                 <label for="reference" class="form-label">
                                     Where did you hear about this?
                                     
@@ -1812,7 +2150,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="reference-Google-Search" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                    <input id="reference-Google-Search" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" value="Google/Search"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="reference-Google-Search" class="font-medium text-gray-700">Google/Search</label>
@@ -1827,7 +2165,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="reference-Facebook" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                    <input id="reference-Facebook" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" value="Facebook"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="reference-Facebook" class="font-medium text-gray-700">Facebook</label>
@@ -1842,7 +2180,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="reference-Instagram" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                    <input id="reference-Instagram" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" value="Instagram"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="reference-Instagram" class="font-medium text-gray-700">Instagram</label>
@@ -1857,7 +2195,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="reference-Twitter" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                    <input id="reference-Twitter" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" value="Twitter"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="reference-Twitter" class="font-medium text-gray-700">Twitter</label>
@@ -1872,7 +2210,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="reference-Indeed" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                    <input id="reference-Indeed" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" value="Indeed"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="reference-Indeed" class="font-medium text-gray-700">Indeed</label>
@@ -1887,7 +2225,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="reference-LinkedIn" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                    <input id="reference-LinkedIn" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" value="LinkedIn"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="reference-LinkedIn" class="font-medium text-gray-700">LinkedIn</label>
@@ -1902,7 +2240,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="reference-Tech-Talent-Charter" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                    <input id="reference-Tech-Talent-Charter" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" value="Tech Talent Charter"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="reference-Tech-Talent-Charter" class="font-medium text-gray-700">Tech Talent Charter</label>
@@ -1917,7 +2255,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="reference-Skills-Bootcamp-Site" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                    <input id="reference-Skills-Bootcamp-Site" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" value="Skills Bootcamp Site"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="reference-Skills-Bootcamp-Site" class="font-medium text-gray-700">Skills Bootcamp Site</label>
@@ -1934,7 +2272,7 @@
                                             
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
-                                                    <input id="reference-Other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" />
+                                                    <input id="reference-Other" type="radio" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="reference" value="Other"/>
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     <label for="reference-Other" class="font-medium text-gray-700">Other</label>
@@ -1987,12 +2325,12 @@
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
                                                     
-                                                            <input id="terms" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="terms" />
+                                                            <input id="terms" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="terms"  value="true"/>
                                                         
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     
-                                                            <label for="terms" class="font-medium text-gray-700">I have read and understand the <a href="https://thecodersguild.org.uk/pdf/Website%20Terms%20and%20Conditions%20V1.1.pdf" target="_blank">terms and conditions</a></label>
+                                                            <label for="terms" class="font-medium text-gray-700">I have read and understand the <a href="https://thecodersguild.org.uk/pdf/Terms%20and%20Conditions%20v1.2.pdf" target="_blank">terms and conditions</a></label>
                                                         
                                                 </div>
                                             </div>
@@ -2026,12 +2364,12 @@
                                             <div class="relative flex items-start">
                                                 <div class="flex items-center h-5">
                                                     
-                                                            <input id="privacy" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="privacy" />
+                                                            <input id="privacy" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" name="privacy"  value="true"/>
                                                         
                                                 </div>
                                                 <div class="ml-3 text-sm leading-5">
                                                     
-                                                            <label for="privacy" class="font-medium text-gray-700">I have read and understand the <a href="https://thecodersguild.org.uk/pdf/tcg_privacy_policy.pdf" target="_blank">privacy policy</a></label>
+                                                            <label for="privacy" class="font-medium text-gray-700">I have read and understand the <a href="https://thecodersguild.org.uk/pdf/Privacy%20Policy%20v1.2.pdf" target="_blank">privacy policy</a></label>
                                                         
                                                 </div>
                                             </div>
@@ -2061,7 +2399,7 @@
     
 </form>
 <script>
-    var objInputs = [{"name":"about_you","label":"About You","help":"First off let's find out who you are. If completing a form like this is difficult for you to manage please get in touch via applications@thecodersguild.org.uk and we will arrange an apternative way for you to apply.","fields":{"first_name":{"type":"text","required":true,"label":"First Name","class":"first","help":"","required_message":"First Name is required."},"last_name":{"type":"text","required":true,"label":"Last Name","class":"last","help":"","required_message":"Last Name is required."},"date_of_birth":{"type":"date_picker","required":true,"label":"Date of Birth","class":"last","help":"","required_message":"Date of Birth is required."},"email":{"type":"text","required":true,"label":"Email","class":"wide","help":"don't worry, we're not going to spam you","required_message":"A valid email address is required."},"phone_number":{"type":"text","required":true,"label":"Phone Number","class":"wide","help":"If we need any clarification with your application it is quicker for us to text you.","required_message":"Phone Number is required"},"pronouns":{"type":"radio","required":true,"label":"Pronouns","class":"first","help":"Help us to address you properly","options":["he/him","she/her","they/them","other"],"required_message":"Pronouns is required","other":"other","other_text":"Please enter below"}}},{"name":"application","label":"Application Questions","help":"This course is not right for everyone - these questions will help us make a judgement on whether this pilot course is the right learning path for you. If you are unsuccessful we will still be able to point you to other resources and programmes. Please fill out the questions to the best of your ability.","fields":{"why_did_user_apply":{"type":"textarea","required":true,"label":"What has made you apply for this course?","class":"wide","help":"More than 50 but less than 200 words please :)","required_message":"Please provide an answer"},"languages":{"type":"checkbox","required":true,"label":"Have you had any previous experience with any of these languages?","class":"wide","help":"","options":["HTML","CSS","JavaScript","PHP","Python","Java","c#","other"],"required_message":"Please provide an answer","other":"other","other_text":"Provide examples seperated by commas"},"language_examples":{"type":"textarea","required":false,"label":"Please give us some examples or more info","class":"wide","help":"More than 50 but less than 200 words please :) <br />\n\t\t\t\t\t\tInclude link(s) to code you have written or a simple overview of something you did on you localhost","required_message":"Please provide an answer"},"self_taught":{"type":"textarea","required":true,"label":"Please give us an example of something you have taught yourself","class":"wide","help":"More than 50 but less than 200 words please :)","required_message":"Please provide an answer"}}},{"name":"demographic_data","label":"Demographic Data","help":"You don't _have_ to tell us this stuff but the DfE (who are paying for the course) have to ask it. All of this data will be held securely and will only be used for anoymous data processsing and evaluation. Feel free to leave out any quastions you don't feel like answering and please don't let it put you off. For more details please see our privacy policy.","fields":{"education":{"type":"radio","required":true,"label":"What's the highest level of Education you have completed?","class":"wide","help":"","options":{"1":"Less than Secondary School","2":"Secondary School /  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)","3":"Secondary School / GCSE - with grades c and above/ 4 and above","4":"Secondary School / College A/AS levels","5":"Some Further Education","6":"College Diploma / Certificate","7":"Undergraduate Degree","8":"Masters / Graduate Degree","9":"Doctorate"},"required_message":"Please provide an answer"},"dependants":{"type":"radio","required":true,"label":"Do you have caring responsibilities for children or other adults?","class":"wide","help":"","options":["Yes caring for children","Yes caring for adults","No caring responsibilites"],"required_message":"Please provide an answer"},"disabilities":{"type":"radio","required":true,"label":"Do you consider yourself to have a disability / long term health condition?","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"ethnicity":{"type":"radio","required":true,"label":"Ethnicity","class":"wide","help":"","options":["White British","All other white","Mixed / multiple ethnic groups","Asian / Asian British","Black / African / Caribbean / Black British","Other ethnic group","Prefer not to say"],"required_message":"Please provide an answer","other":"Other ethnic group","other_text":"Please provide us with your ethnicity"},"married":{"type":"radio","required":true,"label":"Are you Married or In civil partnership","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"pregnant":{"type":"radio","required":true,"label":"Are you currently pregnant / on parental / maternity leave:","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"religion":{"type":"radio","required":true,"label":"Religion / belief","class":"wide","help":"","options":["No religion","Christian","Buddhist","Hindu","Jewish","Muslim","Sikh","Any other religion","Prefer not to say"],"required_message":"Please provide an answer","other":"Any other religion","other_text":"Please provide your religion"},"sexual_orientation":{"type":"radio","required":true,"label":"Sexual Orientation?","class":"wide","help":"","options":["Heterosexual","Homosexual","Bisexual","Prefer not to say","Other"],"required_message":"Please provide an answer","other":"Other","other_text":"Please enter your sexual orientation"},"gender":{"type":"radio","required":true,"label":"Gender?","class":"wide","help":"","options":["Male","Female","Other","Prefer not to say"],"required_message":"Please provide an answer","other":"Other","other_text":"Please enter your gender"},"gender_reassignment":{"type":"radio","required":true,"label":"Gender Reassignment?","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"}}},{"name":"eligibility","label":"Are you eligible for funding?","help":"This course is Gov funded and FREE for you - so obviously there is paperwork for us to complete. We need this information to be able to progress your application so please don't leave any out.","fields":{"employment":{"type":"radio","required":true,"label":"Employment Status","class":"wide","help":"","options":["in full-time employment","in part-time employment","self-employed","unemployed for more than 12 months","unemployed for less than 12 months","in training /education","retired","long term sickness","parental leave / other caring responsibilities"],"required_message":"Please provide an answer"},"employment_eligability":{"type":"radio","required":true,"label":"Do you have the right to work in the UK?","class":"wide","help":"","options":["Yes","No","Unsure"],"required_message":"Please provide an answer"},"occupation":{"type":"text","required":false,"label":"Occupation","class":"wide","help":"What is your current job title (if applicable)","required_message":"Please provide an answer"},"postcode":{"type":"text","required":true,"label":"Postcode","class":"wide","help":"","required_message":"Please provide a valid postcode"},"national_insurance":{"type":"text","required":true,"label":"National Insurance Number","class":"wide","help":"","required_message":"Please provide a valid NI number"}}},{"name":"one_more_thing","label":"Finally","help":"It really helps us if you let us know what bits of our social media and marketing are working :)","fields":{"reference":{"type":"radio","required":true,"label":"Where did you hear about this?","class":"wide","help":"","options":["Google/Search","Facebook","Instagram","Twitter","Indeed","LinkedIn","Tech Talent Charter","Skills Bootcamp Site","Other"],"other":"Other","required_message":"Please provide your reference","other_text":"Where did you hear about this?"},"terms":{"type":"checkbox","required":true,"label":"Have you read the terms and conditions?","class":"wide","help":"","options":["I have read and understand the <a href=\"https://thecodersguild.org.uk/pdf/Website%20Terms%20and%20Conditions%20V1.1.pdf\" target=\"_blank\">terms and conditions</a>"],"required_message":"You must confirm you have read and understood the terms and conditions"},"privacy":{"type":"checkbox","required":true,"label":"Have you read the privacy policy?","class":"wide","help":"","options":["I have read and understand the <a href=\"https://thecodersguild.org.uk/pdf/tcg_privacy_policy.pdf\" target=\"_blank\">privacy policy</a>"],"required_message":"You must confirm you have read and understood the privacy policy"}}}]
+    var objInputs = [{"name":"about_you","label":"About You","help":"First off let's find out who you are. If completing a form like this is difficult for you to manage please get in touch via applications@thecodersguild.org.uk and we will arrange an apternative way for you to apply.","fields":{"first_name":{"type":"text","required":true,"label":"First Name","class":"first","help":"","required_message":"First Name is required."},"last_name":{"type":"text","required":true,"label":"Last Name","class":"last","help":"","required_message":"Last Name is required."},"preferred_name":{"type":"text","required":true,"label":"Preferred Name","class":"preferred","help":"","required_message":"Preferred Name is required."},"date_of_birth":{"type":"date_picker","required":true,"label":"Date of Birth","class":"last","help":"Month/Day/Year format required","required_message":"Date of Birth is required."},"email":{"type":"text","required":true,"label":"Email","class":"wide","help":"don't worry, we're not going to spam you","required_message":"A valid email address is required."},"phone_number":{"type":"text","required":true,"label":"Phone Number","class":"wide","help":"If we need any clarification with your application it is quicker for us to text you.","required_message":"Phone Number is required"},"pronouns":{"type":"radio","required":true,"label":"Pronouns","class":"first","help":"Help us to address you properly","options":["he/him","she/her","they/them","other"],"required_message":"Pronouns is required","other":"other","other_text":"Please enter below"},"where_are_you_looking_to_work":{"type":"checkbox","required":false,"label":"Where would you be looking to work?","class":"wide","help":"","options":["Greater London","South East England","South West England","West Midlands","North West England","North East England","Yorkshire and the Humber","East Midlands","East of England"],"required_message":"Please provide an answer","other":"other","other_text":"Provide examples seperated by commas"},"opportunity":{"type":"select","required":false,"label":"Which vacancy are you applying for?","class":"wide","help":"If you have come here via the .gov find an apprenticeship site or a job board the vacancy will be for a specific organisation - if not applicable just leave this blank","options":{"Meeow Limited":"Meeow Ltd in Leeds","Silkstream in Southend-on-Sea":"Silkstream in Southend-on-Sea","Flex4 in Cumbria":"Flex4 in Cumbria","Star Editions in Ipswich":"Star Editions in Ipswich"},"required_message":"Please provide an answer"}}},{"name":"application","label":"Application Questions","help":"This course is not right for everyone - these questions will help us make a judgement on whether this pilot course is the right learning path for you. If you are unsuccessful we will still be able to point you to other resources and programmes. Please fill out the questions to the best of your ability.","fields":{"why_did_user_apply":{"type":"textarea","required":true,"label":"What has made you apply for this course?","class":"wide","help":"More than 50 but less than 200 words please :)","required_message":"Please provide an answer"},"languages":{"type":"checkbox","required":true,"label":"Have you had any previous experience with any of these languages?","class":"wide","help":"","options":["HTML","CSS","JavaScript","PHP","Python","Java","c#","other"],"required_message":"Please provide an answer","other":"other","other_text":"Provide examples seperated by commas"},"language_examples":{"type":"textarea","required":false,"label":"Please give us some examples or more info","class":"wide","help":"More than 50 but less than 200 words please :) <br />\n\t\t\t\t\t\tInclude link(s) to code you have written or a simple overview of something you did on you localhost","required_message":"Please provide an answer"},"self_taught":{"type":"textarea","required":true,"label":"Please give us an example of something you have taught yourself","class":"wide","help":"More than 50 but less than 200 words please :)","required_message":"Please provide an answer"}}},{"name":"demographic_data","label":"Demographic Data","help":"You don't _have_ to tell us this stuff but the DfE (who are paying for the course) have to ask it. All of this data will be held securely and will only be used for anoymous data processsing and evaluation. Feel free to leave out any questions you don't feel like answering and please don't let it put you off. For more details please see our privacy policy.","fields":{"education":{"type":"select","required":true,"label":"What's the highest level of Education you have completed?","class":"wide","help":"","options":{"1":"Less than Secondary School","2":"Secondary School /  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)","3":"Secondary School / GCSE - with grades c and above/ 4 and above","4":"Secondary School / College A/AS levels","5":"Some Further Education","6":"College Diploma / Certificate","7":"Undergraduate Degree","8":"Masters / Graduate Degree","9":"Doctorate"},"required_message":"Please provide an answer"},"dependants":{"type":"radio","required":true,"label":"Do you have caring responsibilities for children or other adults?","class":"wide","help":"","options":["Yes caring for children","Yes caring for adults","No caring responsibilites"],"required_message":"Please provide an answer"},"disabilities":{"type":"radio","required":true,"label":"Do you consider yourself to have a disability / long term health condition?","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"ethnicity":{"type":"radio","required":true,"label":"Ethnicity","class":"wide","help":"","options":["White British","All other white","Mixed / multiple ethnic groups","Asian / Asian British","Black / African / Caribbean / Black British","Other ethnic group","Prefer not to say"],"required_message":"Please provide an answer","other":"Other ethnic group","other_text":"Please provide us with your ethnicity"},"married":{"type":"radio","required":true,"label":"Are you Married or In civil partnership","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"pregnant":{"type":"radio","required":true,"label":"Are you currently pregnant / on parental / maternity leave:","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"},"religion":{"type":"radio","required":true,"label":"Religion / belief","class":"wide","help":"","options":["No religion","Christian","Buddhist","Hindu","Jewish","Muslim","Sikh","Any other religion","Prefer not to say"],"required_message":"Please provide an answer","other":"Any other religion","other_text":"Please provide your religion"},"sexual_orientation":{"type":"radio","required":true,"label":"Sexual Orientation?","class":"wide","help":"","options":["Heterosexual","Homosexual","Bisexual","Prefer not to say","Other"],"required_message":"Please provide an answer","other":"Other","other_text":"Please enter your sexual orientation"},"gender":{"type":"radio","required":true,"label":"Gender?","class":"wide","help":"","options":["Male","Female","Other","Prefer not to say"],"required_message":"Please provide an answer","other":"Other","other_text":"Please enter your gender"},"gender_reassignment":{"type":"radio","required":true,"label":"Gender Reassignment?","class":"wide","help":"","options":["Yes","No","Prefer not to say"],"required_message":"Please provide an answer"}}},{"name":"eligibility","label":"Are you eligible for funding?","help":"This course is Gov funded and FREE for you - so obviously there is paperwork for us to complete. We need this information to be able to progress your application so please don't leave any out.","fields":{"employment":{"type":"radio","required":true,"label":"Employment Status","class":"wide","help":"","options":["in full-time employment","in part-time employment","self-employed","unemployed for more than 12 months","unemployed for less than 12 months","in training /education","retired","long term sickness","parental leave / other caring responsibilities"],"required_message":"Please provide an answer","other":"in training /education","other_text":"If you are studying, what are you studying and where?"},"employment_eligability":{"type":"radio","required":true,"label":"Do you have the right to work in the UK?","class":"wide","help":"","options":["Yes","No","Unsure"],"required_message":"Please provide an answer"},"occupation":{"type":"text","required":false,"label":"Occupation","class":"wide","help":"What is your current job title (if applicable)","required_message":"Please provide an answer"},"postcode":{"type":"text","required":true,"label":"Postcode","class":"wide","help":"","required_message":"Please provide a valid postcode"},"national_insurance":{"type":"text","required":true,"label":"National Insurance Number","class":"wide","help":"","required_message":"Please provide a valid NI number"}}},{"name":"one_more_thing","label":"Finally","help":"It really helps us if you let us know what bits of our social media and marketing are working :)","fields":{"reference":{"type":"radio","required":true,"label":"Where did you hear about this?","class":"wide","help":"","options":["Google/Search","Facebook","Instagram","Twitter","Indeed","LinkedIn","Tech Talent Charter","Skills Bootcamp Site","Other"],"other":"Other","required_message":"Please provide your reference","other_text":"Where did you hear about this?"},"terms":{"type":"checkbox","required":true,"label":"Have you read the terms and conditions?","class":"wide","help":"","options":["I have read and understand the <a href=\"https://thecodersguild.org.uk/pdf/Terms%20and%20Conditions%20v1.2.pdf\" target=\"_blank\">terms and conditions</a>"],"required_message":"You must confirm you have read and understood the terms and conditions"},"privacy":{"type":"checkbox","required":true,"label":"Have you read the privacy policy?","class":"wide","help":"","options":["I have read and understand the <a href=\"https://thecodersguild.org.uk/pdf/Privacy%20Policy%20v1.2.pdf\" target=\"_blank\">privacy policy</a>"],"required_message":"You must confirm you have read and understood the privacy policy"}}}]
 </script>
 
 
@@ -2119,10 +2457,10 @@
         <div class="border-b-2 border-grey-100 sm:border-none">
             <h5 class="uppercase text-blue-200 font-bold md:mb-5 mb-4 text-xl leading-lg md:text-md md:leading-sm">Quick Links</h5>
             <ul class="footer-dropdown-content h-auto max-h-0 opacity-0 sm:opacity-100 transition-all ease-in duration-150">
-            <li class="mb-2"><a href="https://thecodersguild.org.uk/pdf/Website Terms and Conditions V1.1.pdf" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Terms and Conditions</a></li>
+            <li class="mb-2"><a href="https://thecodersguild.org.uk/pdf/Terms%20and%20Conditions%20v1.2.pdf" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Terms and Conditions</a></li>
             <li class="mb-2"><a href="https://thecodersguild.org.uk/pdf/Complaints%20Policy%20v1.2.pdf" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Complaints</a></li>
             <li class="mb-2"><a href="https://thecodersguild.org.uk/pdf/Cookie Policy V1.1.pdf" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Cookies</a></li>
-            <li class="mb-2"><a href="https://thecodersguild.org.uk/pdf/tcg_privacy_policy.pdf" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Privacy</a></li>
+            <li class="mb-2"><a href="https://thecodersguild.org.uk/pdf/Privacy%20Policy%20v1.2.pdf" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Privacy</a></li>
             <li class="mb-2"><a href="https://thecodersguild.org.uk/pdf/Modern Slavery Act v1.2.pdf" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Modern Slavery</a></li>
             <li class="mb-2"><a href="https://thecodersguild.org.uk/policies" class="text-md md:text-sm leading-lg md:leading-sm block text-black">All Policies</a></li>
             <li class="mb-2"><a href="https://thecodersguild.org.uk/reviews" class="text-md md:text-sm leading-lg md:leading-sm block text-black">Reviews</a></li>
@@ -2166,6 +2504,7 @@
         </div>
     </div>
 </div>
+
     </footer>
     <script src="/js/font-awesome.js"></script>
     <!-- Current page: / -->

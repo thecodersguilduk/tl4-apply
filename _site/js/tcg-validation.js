@@ -6,7 +6,7 @@ jQuery(document).on("click", ".validateFormStepPrev", function(event) {
     jQuery(fieldset).removeClass('active');
     var allFieldsets = jQuery('.application-form--fieldset');
     nextFieldSet = fieldsetCounter - 1;
-    console.log(allFieldsets);
+    // console.log(allFieldsets);
     jQuery(allFieldsets[nextFieldSet]).addClass('active');
     scrollTo = jQuery(allFieldsets[nextFieldSet]).offset().top - 100;
     // console.log(allFieldsets[nextFieldSet]);
@@ -31,7 +31,7 @@ jQuery(document).on("click", ".validateFormStepNext, .submitApplication", functi
     }
     var validationInputs = validationInputData['fields'];
     // console.log(objInputs);
-    console.log(validationInputs);
+    // console.log(validationInputs);
     var objValues = {};
     var currentStepValidation = true;
     var scrollToElement;
@@ -44,7 +44,7 @@ jQuery(document).on("click", ".validateFormStepNext, .submitApplication", functi
             case 'radio':
                 var checked = false;
                 selector = 'input[name="'+key+'"]';
-                console.log(selector);
+                // console.log(selector);
                 objValues[key] = '';
                 errorMessageClass = '.requiredMessage.'+key
                 jQuery(errorMessageClass).addClass('hidden');
@@ -52,7 +52,7 @@ jQuery(document).on("click", ".validateFormStepNext, .submitApplication", functi
                     if(jQuery(this).prop('checked')){
                         checked = true;
                         objValues[key] = jQuery(this).val();
-                        console.log(jQuery(this).val());
+                        // console.log(jQuery(this).val());
                     }
                 });
                 if(required){
@@ -67,19 +67,22 @@ jQuery(document).on("click", ".validateFormStepNext, .submitApplication", functi
                         }
                         jQuery(this).css('border-color',border);
                     });
+                    if(value.other == objValues[key]){
+                        var otherSelector = '#'+key+'_option_selected'
+                        var otherInput = jQuery(otherSelector);
+                        if(otherInput.val()){
+                            jQuery(otherInput).css('border-color',border);
+                        } else {
+                            jQuery(errorMessageClass).removeClass('hidden');
+                            jQuery(otherInput).css('border-color','red');
+                            currentStepValidation = false;
+                        }
+                    }
                 }
             break;
             case 'checkbox':
                 var checked = false;
-                switch(key){
-                    case 'terms':
-                    case 'privacy':
-                        selector = 'input[name="'+key+'"]';
-                    break;
-                    default:
-                        selector = 'input[name="'+key+'[]"]';
-                    break;
-                }
+                selector = 'input[name="'+key+'"]';
                 // console.log(selector);
                 objValues[key] = [];
                 // console.log(objValues);
@@ -104,6 +107,20 @@ jQuery(document).on("click", ".validateFormStepNext, .submitApplication", functi
                         }
                         jQuery(this).css('border-color',border);
                     });
+                    for(counter=0; counter < objValues[key].length; counter++){
+                        var currentCheckedBox = objValues[key][counter];
+                        if(value.other == currentCheckedBox){
+                            var otherSelector = '#'+key+'_option_selected'
+                            var otherInput = jQuery(otherSelector);
+                            if(otherInput.val()){
+                                jQuery(otherInput).css('border-color',border);
+                            } else {
+                                jQuery(errorMessageClass).removeClass('hidden');
+                                jQuery(otherInput).css('border-color','red');
+                                currentStepValidation = false;
+                            }
+                        }
+                    }
                 }
             break;
             case 'text':
@@ -193,7 +210,7 @@ jQuery(document).on("click", ".validateFormStepNext, .submitApplication", functi
     if(currentStepValidation){
         var allFieldsets = jQuery('.application-form--fieldset');
         nextFieldSet = fieldsetCounter + 1;
-        console.log(allFieldsets);
+        // console.log(allFieldsets);
         nextFieldSet = fieldsetCounter + 1;
         if(jQuery(event.target).hasClass('submitApplication')){
             jQuery('#applicationForm').submit();
@@ -233,7 +250,6 @@ function isValidateNationalInsurance(nationalInsurance) {
 }
 
 jQuery( document ).ready(function() {
-    console.log(
     jQuery( "#date_of_birth" ).datepicker({
         changeMonth: true,
         changeYear: true,
@@ -242,6 +258,36 @@ jQuery( document ).ready(function() {
         onSelect: function(dateText, inst) {
             jQuery(this).focus();
         }
-    })
-    );
+    });
+});
+
+jQuery( document ).ready(function() {
+    const menuBtn = document.querySelector(".menu-btn");  
+    // const menuBranding = document.querySelector(".menu-branding");
+    // const navItems = document.querySelectorAll(".nav-item");
+    // console.log(menuBtn);
+    let showMenu = false; 
+    menuBtn.addEventListener("click", toggleMenu); 
+    
+    function toggleMenu() { 
+        if (!showMenu) { 
+            menuBtn.classList.add("close"); 
+            jQuery(".showMobileMenu").show(500); 
+            // menuBranding.classList.add("show"); 
+            // navItems.forEach((item) => 
+            //     item.classList.add("show")); 
+
+            // Reset the menu state 
+            showMenu = true; 
+        } else { 
+            menuBtn.classList.remove("close");  
+            jQuery(".showMobileMenu").hide(500); 
+            // menuBranding.classList.remove("show"); 
+            // navItems.forEach((item) => 
+            //     item.classList.remove("show")); 
+
+            // Reset the menu state 
+            showMenu = false; 
+        } 
+    } 
 });
