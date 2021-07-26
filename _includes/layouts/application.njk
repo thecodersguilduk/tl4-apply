@@ -69,7 +69,7 @@
                                                 </div>
                                             </div>
                                         {% endfor %}  
-                                        {% if field.other %}
+                                        {% if (field.other) or (not ukSelected) %}
                                             <div class="other other__{{name}}">
                                                 <p class="m-2 text-sm text-gray-500">{{field.other_text}}</p>
                                                 <input id="{{name}}_option_selected" name="{{name}}_option_selected" class="form-input mt-1 mb-1 block w-full placeholder-muted" {% if field.required_message %}required{%endif%} />
@@ -155,6 +155,31 @@
                                                 {% endfor %} 
                                             </select>
                                         </div>
+                                        <script>
+                                            var ukSelected = true;
+                                            var nationalityField = document.getElementById('nationality');
+                                            var optionContainer = document.querySelector('.nationality');
+                                        
+                                            nationalityField.addEventListener('change', ()=>{
+                                                if(nationalityField.value === 'United Kingdom'){
+                                                    ukSelected = true; 
+                                                    optionContainer.style.display = 'none'
+                                                    
+                                                } else {
+                                                    ukSelected = false;
+                                                    optionContainer.style.display = 'block';
+                                                    
+                                                }
+                                            })
+                                            
+                                        </script>  
+                                        {% if not ukSelected %}
+                                            <div class="other nationality">
+                                                <p class="m-2 text-sm text-gray-500">{{field.other_text}}</p>
+                                                <input id="{{name}}_option_selected" name="{{name}}_option_selected" class="form-input mt-1 mb-1 block w-full placeholder-muted" {% if field.required_message %}required{%endif%} />
+                                            </div>
+                                        {% endif %}
+                                        
                                     {% case 'textarea' %}
                                         <textarea id="{{name}}" name="{{name}}" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
                                     {%default%}
