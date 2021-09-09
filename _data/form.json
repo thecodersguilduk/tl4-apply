@@ -2,7 +2,7 @@
    {
        "name":"about_you",
        "label":"About You",
-       "help":"First off let's find out who you are. If completing a form like this is difficult for you to manage please get in touch via applications@thecodersguild.org.uk and we will arrange an alternative way for you to apply.",
+       "help":"First off let's find out who you are. If completing a form like this is difficult for you to manage please get in touch via applications@thecodersguild.org.uk and we will arrange an alternative way for you to apply.", 
        "fields":{
           "first_name":{
              "type":"text",
