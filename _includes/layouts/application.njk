@@ -9,11 +9,18 @@
         <fieldset class="application-form--fieldset {% if fieldsetCounter == 0 %} active {% endif %}" data-fieldset="{{fieldset.name}}">
             <div class="card">
                 <div class="lg:flex">
-                    <div class="lg:w-2/6 p-8">
+                    <div class="lg:w-2/6 w-full p-8">
                         <label for="" class="form-label">{{ fieldset.label }}</label>
                         {% if fieldset.help %}
                             <p class="mt-1 text-sm leading-5 text-gray-500">{{ fieldset.help }} </p>
                         {% endif %}
+                  
+                    {#html job vacancy added whilst developing dynamic option to populate#}
+                        <h3 class="my-8">Current Vacancies</h3>
+                        <h5 class="text-lg">Software Test Analyst</h5>
+                        <h5 class="font-bold text-md">Pace IT Systems</h5>
+                        <p class="mt-1 text-sm leading-5 text-gray-500">Wakfield</p>
+                        <a class="mt-1 text-sm break-all" href=" https://www.findapprenticeship.service.gov.uk/apprenticeship/-655572" target="_blank">https://www.findapprenticeship.service.gov.uk/apprenticeship/-655572</a>
                     </div>
                     <div class="lg:w-4/6 card-dark p-8">
                         {% set fieldCounter = 0 %}
