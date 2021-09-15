@@ -160,7 +160,7 @@
                                             <select name="{{name}}" id="{{name}}" class="form-select"> 
                                                 <option value="">Please Select</option>
                                                 {% for key,option in field.options %}
-                                                    <option value="{{key}}">{{option}}</option>
+                                                    <option value="{{key}}">{{option.name}}</option>
                                                 {% endfor %} 
                                             </select>
                                         </div>
