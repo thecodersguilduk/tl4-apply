@@ -19,7 +19,7 @@
              "class":"last",
              "help":"",
              "required_message":"Last Name is required."
-          },
+          },F
           "date_of_birth":{
              "type":"date_picker",
              "required":true,
@@ -67,8 +67,18 @@
             "class":"wide",
             "help":"If you have come here via the .gov find an apprenticeship site or a job board the vacancy will be for a specific organisation - if not applicable just leave this blank",
             "options":{
-               "Pace IT Systems": "Pace IT Systems",
-              "Lucy Zodion": "Lucy Zodion, West Yorkshire"
+               "Pace IT Systems": {
+                "name": "Pace IT Systems",
+                 "job_title" : "Software Test Analyst",
+                 "url": "https://www.findapprenticeship.service.gov.uk/apprenticeship/-655572",
+                 "location": "Wakefield"
+               },
+              "Lucy Zodion": {
+                "name": "Lucy Zodion, West Yorkshire",
+                "job_title": "Software Tester",
+                "url": "",
+                "location": "Sowerby Bridge"
+              }
             },
             "required_message":"Please provide an answer"
          }
