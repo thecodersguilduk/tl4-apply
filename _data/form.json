@@ -19,7 +19,7 @@
              "class":"last",
              "help":"",
              "required_message":"Last Name is required."
-          },F
+          },
           "date_of_birth":{
              "type":"date_picker",
              "required":true,
