@@ -67,7 +67,8 @@
             "class":"wide",
             "help":"If you have come here via the .gov find an apprenticeship site or a job board the vacancy will be for a specific organisation - if not applicable just leave this blank",
             "options":{
-               "Pace IT Systems": "Pace IT Systems"
+               "Pace IT Systems": "Pace IT Systems",
+              "Lucy Zodion": "Lucy Zodion, West Yorkshire"
             },
             "required_message":"Please provide an answer"
          }
