@@ -162,7 +162,7 @@
                                             <select name="{{name}}" id="{{name}}" class="form-select"> 
                                                 <option value="">Please Select</option>
                                                 {% for key,option in field.options %}
-                                                    <option value="{{key}}">{{option.name}}</option>
+                                                    <option value="{{key}}">{% if option.name %}{{option.name}}{% else %}{{option}}{% endif %}</option>
                                                 {% endfor %} 
                                             </select>
                                         </div>
