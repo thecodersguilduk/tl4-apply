@@ -15,16 +15,18 @@
                             <p class="mt-1 text-sm leading-5 text-gray-500">{{ fieldset.help }} </p>
                         {% endif %}
                         
-                        <h3 class="my-8">Current Vacancies</h3>
-                  
-                        {% for key, option in fieldset.fields.opportunity.options  %}
-                          <div class="mb-6">
-                              <h5>{{option.name}}</h5>
-                              <h5>{{option.job_title}}</h5>
-                              <p class="mt-1 text-sm leading-5 text-gray-500">{{option.location}}</p>
-                              <a class="mt-1 text-sm break-all" href="{{option.url}}" target="_blank">Click here to apply</a>
-                          </div>
-                        {% endfor %}
+                        {% if fieldset.fields.opportunity.options %}
+                            <h3 class="my-8">Current Vacancies</h3>
+                    
+                            {% for key, option in fieldset.fields.opportunity.options  %}
+                            <div class="mb-6">
+                                <h5>{{option.name}}</h5>
+                                <h5>{{option.job_title}}</h5>
+                                <p class="mt-1 text-sm leading-5 text-gray-500">{{option.location}}</p>
+                                <a class="mt-1 text-sm break-all" href="{{option.url}}" target="_blank">Click here to apply</a>
+                            </div>
+                            {% endfor %}
+                        {% endif %}
                     </div>
                     <div class="lg:w-4/6 card-dark p-8">
                         {% set fieldCounter = 0 %}
@@ -171,6 +173,7 @@
                                             var nationalityField = document.getElementById('nationality');
                                             var optionContainer = document.querySelector('.nationality');
                                         
+                                        if(nationalityField){
                                             nationalityField.addEventListener('change', ()=>{
                                                 if(nationalityField.value === 'United Kingdom'){
                                                     ukSelected = true; 
@@ -182,6 +185,7 @@
                                                     
                                                 }
                                             })
+                                            }
                                             
                                         </script>  
                                         {% if not ukSelected %}

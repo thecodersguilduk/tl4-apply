@@ -25,7 +25,7 @@
              "required":true,
              "label":"Date of Birth",
              "class":"last",
-             "help":"",
+             "help":"Please enter in MM/DD/YYYY Format",
              "required_message":"Date of Birth is required."
           },
           "email":{
@@ -127,15 +127,33 @@
              "class":"wide",
              "help":"",
              "options":{
-                 "1": "Less than Secondary School",
-                 "2": "Secondary School \/  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)",
-                 "3": "Secondary School \/ GCSE - with grades c and above\/ 4 and above",
-                 "4": "Secondary School \/ College A\/AS levels",
-                 "5": "Some Further Education",
-                 "6": "College Diploma \/ Certificate",
-                 "7": "Undergraduate Degree",
-                 "8": "Masters \/ Graduate Degree",
-                 "9": "Doctorate"
+                 "1": {
+                    "name": "Less than Secondary School"
+                 },
+                 "2": {
+                    "name": "Secondary School \/  GCSE - with grades 3, 2, 1 or grades D, E, F, G (or similar)"
+                 },
+                 "3": {
+                    "name": "Secondary School \/ GCSE - with grades c and above\/ 4 and above"
+                 },
+                 "4": {
+                    "name": "Secondary School \/ College A\/AS levels"
+                 },
+                 "5": {
+                    "name": "Some Further Education"
+                 },
+                 "6": {
+                    "name": "College Diploma \/ Certificate"
+                 },
+                 "7": {
+                    "name": "Undergraduate Degree"
+                 },
+                 "8": {
+                    "name": "Masters \/ Graduate Degree"
+                 },
+                 "9": {
+                    "name": "Doctorate"
+                 }
               },
              "required_message":"Please provide an answer"
           },

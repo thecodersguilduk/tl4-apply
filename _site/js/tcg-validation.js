@@ -127,7 +127,7 @@ jQuery(document).on("click", ".validateFormStepNext, .submitApplication", functi
             case 'date_picker':
                 selector = 'input#'+key;
                 inputValue = jQuery(selector).val();
-                // console.log(errorMessageClass);
+                //console.log(errorMessageClass);
                 objValues[key] = inputValue;
                 errorMessageClass = '.requiredMessage.'+key
                 jQuery(errorMessageClass).addClass('hidden');
