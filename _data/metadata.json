@@ -1,16 +1,16 @@
 {
-  "title": "Software development level 4 - Sign up",
-  "url": "http://applysdl4.thecodersguild.org.uk/",
-  "description": "Software development level 4 - This is an apprenticeship scheme ran by The Coders Guild. Use this site to register your interest in this course and start your journey to becoming a web developer.",
+  "title": "Software Testing level 4 - Sign up",
+  "url": "http://applystl4.thecodersguild.org.uk/",
+  "description": "Software Testing level 4 - This is an apprenticeship scheme ran by The Coders Guild. Use this site to register your interest in this course and start your journey to becoming a web developer.",
   "feed": {
-    "subtitle": "Software development level 4 - This is an apprenticeship scheme ran by The Coders Guild. Use this site to register your interest in this course and start your journey to becoming a web developer.",
+    "subtitle": "Software Testing level 4 - This is an apprenticeship scheme ran by The Coders Guild. Use this site to register your interest in this course and start your journey to becoming a web developer.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "http://applysdl4.thecodersguild.org.uk/"
+    "id": "http://applystl4.thecodersguild.org.uk/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "http://applysdl4.thecodersguild.org.uk/feed/feed.json"
+    "url": "http://applystl4.thecodersguild.org.uk/feed/feed.json"
   },
   "author": {
     "name": "Your Name Here",
