@@ -177,7 +177,9 @@
                 "No",
                 "Prefer not to say"
              ],
-             "required_message":"Please provide an answer"
+             "required_message":"Please provide an answer",
+             "other": "additional_needs",
+             "other_text": "Let us know about any adjustments you may need to fulfil your role"
           },
           "ethnicity":{
              "type":"radio",
@@ -269,14 +271,6 @@
        "label":"Finally",
        "help":"It really helps us if you let us know what bits of our social media and marketing are working :)",
        "fields":{
-           "additional_needs":{
-              "type":"textarea",
-              "required":false,
-              "label":"Do you have any additional needs you think we should know about?",
-              "class":"wide",
-              "help":"Please provide any extra information about yourself that you think we will need to know.",
-              "required_message":"Please provide an answer"
-           },
           "reference":{
              "type":"radio",
              "required":true,
