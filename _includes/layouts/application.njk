@@ -175,7 +175,7 @@
                                         
                                         if(nationalityField){
                                             nationalityField.addEventListener('change', ()=>{
-                                                if(nationalityField.value === 'United Kingdom'){
+                                                if(nationalityField.value !== 'EU Citizen'){
                                                     ukSelected = true; 
                                                     optionContainer.style.display = 'none'
                                                     
