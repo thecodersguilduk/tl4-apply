@@ -98,6 +98,18 @@
        "label":"Application Questions",
        "help":"This course is not right for everyone - these questions will help us make a judgement on whether this pilot course is the right learning path for you. If you are unsuccessful we will still be able to point you to other resources and programmes. Please fill out the questions to the best of your ability.",
        "fields":{
+         "completed_before": {
+            "type": "select",
+            "required": true,
+            "label": "Have you completed an apprenticeship before?",
+            "class": "wide",
+            "help": "",
+            "required_message": "Please provide an answer",
+            "options":{
+               "Yes": "Yes",
+               "No": "No"
+            }
+        },
           "why_did_user_apply":{
              "type":"textarea",
              "required":true,
