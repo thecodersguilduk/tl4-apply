@@ -87,6 +87,12 @@
                 "job_title": "Software Tester Apprentice",
                 "url": "https://www.findapprenticeship.service.gov.uk/apprenticeship/-664191",
                 "location": "Leeds"
+              },
+              "Dedalus": {
+                "name": "Pragmatic Digital, West Yorkshire",
+                "job_title": "Software Tester Apprentice",
+                "url": "https://www.findapprenticeship.service.gov.uk/apprenticeship/-674388",
+                "location": "Leeds"
               }
             },
             "required_message":"Please provide an answer"
