@@ -23,7 +23,7 @@
                                 <h5>{{option.name}}</h5>
                                 <h5>{{option.job_title}}</h5>
                                 <p class="mt-1 text-sm leading-5 text-gray-500">{{option.location}}</p>
-                                <a class="mt-1 text-sm break-all" href="{{option.url}}" target="_blank">Click here to apply</a>
+                                <a class="mt-1 text-sm break-all" href="{{option.url}}" target="_blank">Click here for more information</a>
                             </div>
                             {% endfor %}
                         {% endif %}
@@ -172,10 +172,11 @@
                                             var ukSelected = true;
                                             var nationalityField = document.getElementById('nationality');
                                             var optionContainer = document.querySelector('.nationality');
-                                        
+
+                                                                                    
                                         if(nationalityField){
                                             nationalityField.addEventListener('change', ()=>{
-                                                if(nationalityField.value === 'United Kingdom'){
+                                                if(nationalityField.value !== 'EU Citizen'){
                                                     ukSelected = true; 
                                                     optionContainer.style.display = 'none'
                                                     

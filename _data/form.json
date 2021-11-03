@@ -60,6 +60,21 @@
              "other":"other",
              "other_text":"Please enter below"
           },
+         "nationality":{
+            "type":"select",
+            "required":true,
+            "label":"Nationality",
+            "class":"wide",
+            "help":"Select your nationality from the drop down list",
+            "options":{
+               "UK Citizen": "UK Citizen",
+               "EEC Citizen": "EEC Citizen",
+               "EU Citizen": "EU Citizen",
+               "Other": "Other"
+              },
+              "required_message":"Please select an option from the dropdown list",
+               "other_text": "Please supply your residential/pre-settled status"
+            },
           "opportunity":{
             "type":"select",
             "required":false,
@@ -67,11 +82,17 @@
             "class":"wide",
             "help":"If you have come here via the .gov find an apprenticeship site or a job board the vacancy will be for a specific organisation - if not applicable just leave this blank",
             "options":{
-              "Lucy Zodion": {
-                "name": "Lucy Zodion, West Yorkshire",
-                "job_title": "Software Tester",
-                "url": "https://www.findapprenticeship.service.gov.uk/apprenticeship/-659198",
-                "location": "Sowerby Bridge"
+              "Dedalus": {
+                "name": "Dedalus, West Yorkshire",
+                "job_title": "Software Tester Apprentice",
+                "url": "https://www.findapprenticeship.service.gov.uk/apprenticeship/-664191",
+                "location": "Leeds"
+              },
+              "Pragmatic Digital": {
+                "name": "Pragmatic Digital, West Yorkshire",
+                "job_title": "Software Tester Apprentice",
+                "url": "https://www.findapprenticeship.service.gov.uk/apprenticeship/-674388",
+                "location": "Leeds"
               }
             },
             "required_message":"Please provide an answer"
@@ -83,6 +104,18 @@
        "label":"Application Questions",
        "help":"This course is not right for everyone - these questions will help us make a judgement on whether this pilot course is the right learning path for you. If you are unsuccessful we will still be able to point you to other resources and programmes. Please fill out the questions to the best of your ability.",
        "fields":{
+         "completed_before": {
+            "type": "select",
+            "required": true,
+            "label": "Have you completed an apprenticeship before?",
+            "class": "wide",
+            "help": "",
+            "required_message": "Please provide an answer",
+            "options":{
+               "Yes": "Yes",
+               "No": "No"
+            }
+        },
           "why_did_user_apply":{
              "type":"textarea",
              "required":true,
@@ -151,19 +184,6 @@
               },
              "required_message":"Please provide an answer"
           },
-          "dependants":{
-             "type":"radio",
-             "required":true,
-             "label":"Do you have caring responsibilities for children or other adults?",
-             "class":"wide",
-             "help":"",
-             "options":[
-                "Yes caring for children",
-                "Yes caring for adults",
-                "No caring responsibilites"
-             ],
-             "required_message":"Please provide an answer"
-          },
           "disabilities":{
              "type":"radio",
              "required":true,
@@ -175,7 +195,9 @@
                 "No",
                 "Prefer not to say"
              ],
-             "required_message":"Please provide an answer"
+             "required_message":"Please provide an answer",
+             "other": "additional_needs",
+             "other_text": "Let us know about any adjustments you may need to fulfil your role"
           },
           "ethnicity":{
              "type":"radio",
@@ -195,99 +217,6 @@
              "required_message":"Please provide an answer",
              "other":"Other ethnic group",
              "other_text":"Please provide us with your ethnicity"
-          },
-          "married":{
-             "type":"radio",
-             "required":true,
-             "label":"Are you Married or In civil partnership",
-             "class":"wide",
-             "help":"",
-             "options":[
-                "Yes",
-                "No",
-                "Prefer not to say"
-             ],
-             "required_message":"Please provide an answer"
-          },
-          "pregnant":{
-             "type":"radio",
-             "required":true,
-             "label":"Are you currently pregnant \/ on parental \/ maternity leave:",
-             "class":"wide",
-             "help":"",
-             "options":[
-                "Yes",
-                "No",
-                "Prefer not to say"
-             ],
-             "required_message":"Please provide an answer"
-          },
-          "religion":{
-             "type":"radio",
-             "required":true,
-             "label":"Religion \/ belief",
-             "class":"wide",
-             "help":"",
-             "options":[
-                "No religion",
-                "Christian",
-                "Buddhist",
-                "Hindu",
-                "Jewish",
-                "Muslim",
-                "Sikh",
-                "Any other religion",
-                "Prefer not to say"
-             ],
-             "required_message":"Please provide an answer",
-             "other":"Any other religion",
-             "other_text":"Please provide your religion"
-          },
-          "sexual_orientation":{
-             "type":"radio",
-             "required":true,
-             "label":"Sexual Orientation?",
-             "class":"wide",
-             "help":"",
-             "options":[
-                "Heterosexual",
-                "Homosexual",
-                "Bisexual",
-                "Prefer not to say",
-                "Other"
-             ],
-             "required_message":"Please provide an answer",
-             "other":"Other",
-             "other_text":"Please enter your sexual orientation"
-          },
-          "gender":{
-             "type":"radio",
-             "required":true,
-             "label":"Gender?",
-             "class":"wide",
-             "help":"",
-             "options":[
-                "Male",
-                "Female",
-                "Other",
-                "Prefer not to say"
-             ],
-             "required_message":"Please provide an answer",
-             "other":"Other",
-             "other_text":"Please enter your gender"
-          },
-          "gender_reassignment":{
-             "type":"radio",
-             "required":true,
-             "label":"Gender Reassignment?",
-             "class":"wide",
-             "help":"",
-             "options":[
-                "Yes",
-                "No",
-                "Prefer not to say"
-             ],
-             "required_message":"Please provide an answer"
           }
        }
     },
@@ -296,27 +225,6 @@
        "label":"Are you eligible for funding?",
        "help":"This course is Gov funded and FREE for you - so obviously there is paperwork for us to complete. We need this information to be able to progress your application so please don't leave any out.",
        "fields":{
-          "employment":{
-             "type":"radio",
-             "required":true,
-             "label":"Employment Status",
-             "class":"wide",
-             "help":"",
-             "options":[
-                "in full-time employment",
-                "in part-time employment",
-                "self-employed",
-                "unemployed for more than 12 months",
-                "unemployed for less than 12 months",
-                "in training \/education",
-                "retired",
-                "long term sickness",
-                "parental leave \/ other caring responsibilities"
-             ],
-             "required_message":"Please provide an answer",
-             "other":"in training \/education",
-             "other_text":"If you are studying, what are you studying and where?"
-          },
           "employment_eligability":{
              "type":"radio",
              "required":true,
@@ -343,19 +251,6 @@
               ],
               "required_message":"Please provide an answer"
            },
-          "provider":{
-           "type":"radio",
-           "required":true,
-           "label":"Course Provider",
-           "class":"first",
-           "help":"These courses are funded through your authority, please let us know which one",
-           "options":[
-              "Liverpool City Region",
-              "West Yorkshire Combined Authority",
-              "Other"
-           ],
-           "required_message":"Please provide an answer"
-          },
           "occupation":{
              "type":"text",
              "required":false,
@@ -386,14 +281,6 @@
              "label":"What is your full residential address?",
              "class":"wide",
              "required_message":"Please provide an answer"
-          },
-          "national_insurance":{
-             "type":"text",
-             "required":true,
-             "label":"National Insurance Number",
-             "class":"wide",
-             "help":"",
-             "required_message":"Please provide a valid NI number"
           }
        }
     },
@@ -402,14 +289,6 @@
        "label":"Finally",
        "help":"It really helps us if you let us know what bits of our social media and marketing are working :)",
        "fields":{
-           "additional_needs":{
-              "type":"textarea",
-              "required":false,
-              "label":"Do you have any additional needs you think we should know about?",
-              "class":"wide",
-              "help":"Please provide any extra information about yourself that you think we will need to know.",
-              "required_message":"Please provide an answer"
-           },
           "reference":{
              "type":"radio",
              "required":true,
