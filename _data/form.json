@@ -82,12 +82,6 @@
             "class":"wide",
             "help":"If you have come here via the .gov find an apprenticeship site or a job board the vacancy will be for a specific organisation - if not applicable just leave this blank",
             "options":{
-              "Dedalus": {
-                "name": "Dedalus, West Yorkshire",
-                "job_title": "Software Tester Apprentice",
-                "url": "https://www.findapprenticeship.service.gov.uk/apprenticeship/-664191",
-                "location": "Leeds"
-              },
               "Pragmatic Digital": {
                 "name": "Pragmatic Digital, West Yorkshire",
                 "job_title": "Software Tester Apprentice",
