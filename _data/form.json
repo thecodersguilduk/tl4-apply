@@ -82,6 +82,12 @@
             "class":"wide",
             "help":"If you have come here via the .gov find an apprenticeship site or a job board the vacancy will be for a specific organisation - if not applicable just leave this blank",
             "options":{
+              "Pragmatic Digital": {
+                "name": "Pragmatic Digital, West Yorkshire",
+                "job_title": "Software Tester Apprentice",
+                "url": "https://www.findapprenticeship.service.gov.uk/apprenticeship/-695759",
+                "location": "Leeds"
+              }
             },
             "required_message":"Please provide an answer"
          }
