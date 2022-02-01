@@ -2,7 +2,7 @@
    {
        "name":"about_you",
        "label":"About You",
-       "help":"First off let's find out who you are. If completing a form like this is difficult for you to manage please get in touch via applications@thecodersguild.org.uk and we will arrange an alternative way for you to apply.", 
+       "help":"First off let's find out who you are. If completing a form like this is difficult for you to manage please get in touch via applications@thecodersguild.org.uk and we will arrange an alternative way for you to apply.",
        "fields":{
           "first_name":{
              "type":"text",
@@ -61,20 +61,47 @@
              "other_text":"Please enter below"
           },
          "nationality":{
-            "type":"select",
+            "type":"radio",
             "required":true,
             "label":"Nationality",
             "class":"wide",
-            "help":"Select your nationality from the drop down list",
-            "options":{
-               "UK Citizen": "UK Citizen",
-               "EEC Citizen": "EEC Citizen",
-               "EU Citizen": "EU Citizen",
-               "Other": "Other"
-              },
-              "required_message":"Please select an option from the dropdown list",
-               "other_text": "Please supply your residential/pre-settled status"
-            },
+            "help":"Help us to assess your eligibility for the course by selecting one of the following options",
+            "options":[
+               "UK Citizen",
+               "EEC Citizen",
+               "EU Citizen",
+               "Other"
+            ],
+            "other": "Other",
+            "required_message":"Please select an option",
+            "other_text": "Please supply your nationality"
+         },
+         "residential_status":{
+            "type":"radio",
+            "required":true,
+            "label":"Residential Status",
+            "class":"wide",
+            "help":"Have you resided in the UK or EEA for the last 3 years?",
+            "options":[
+               "Yes",
+               "No"
+            ],
+            "required_message":"This question is required to assess your eligibility"
+         },
+         "limited_leave":{
+            "type":"radio",
+            "required":true,
+            "label":"Limited Leave",
+            "class":"wide",
+            "help":"Do you have limited leave in the UK?",
+            "options":[
+               "Yes",
+               "No"
+            ],
+            "other": "Yes",
+            "required_message":"Please select an option",
+            "other_text": "Please supply more details"
+         },
           "opportunity":{
             "type":"select",
             "required":false,
