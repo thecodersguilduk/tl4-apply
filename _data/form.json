@@ -114,6 +114,12 @@
                 "job_title": "Software Tester Apprentice",
                 "url": "https://www.findapprenticeship.service.gov.uk/apprenticeship/-705017",
                 "location": "Leeds"
+              },
+              "Dedalus": {
+                "name": "Dedalus, West Yorkshire",
+                "job_title": "Software Tester Apprentice",
+                "url": "https://www.findapprenticeship.service.gov.uk/apprenticeship/-710281",
+                "location": "Leeds"
               }
             },
             "required_message":"Please provide an answer"
